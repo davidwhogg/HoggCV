@@ -10,3 +10,6 @@ cd HoggCV
 make
 open hogg_cv.pdf
 ```   
+
+## Sub-projects
+- There is a subdirectory `biosketches` for 1-page and 2-page CVs for grant proposals.
