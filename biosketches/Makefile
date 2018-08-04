@@ -3,7 +3,7 @@ RM = /bin/rm -fv
 .SUFFIXES: .tex .dvi .ps .pdf
 
 # ALLFILES = $(patsubst %.tex,%.pdf,$(wildcard *.tex))
-all: hogg_cv.pdf
+all: hogg_wobble_bio.pdf
 
 .tex.pdf:
 	pdflatex $*
