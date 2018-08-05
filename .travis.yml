@@ -1,3 +1,4 @@
+# copied from https://dfm.io/posts/travis-latex/
 sudo: false
 language: generic
 matrix:
