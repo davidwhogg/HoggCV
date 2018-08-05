@@ -7,5 +7,5 @@ matrix:
 script: |
   if [[ $TEST_LANG == paper ]]
   then
-    source .ci/build-paper.sh
+    source .ci/build-cv.sh
   fi
