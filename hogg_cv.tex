@@ -50,10 +50,10 @@
   \newcommand{\deemph}[1]{\textcolor{grey}{\footnotesize{#1}}}
   \newcommand{\pubnumber}[1]{\deemph{{#1}.}}
 % define heading command SERIOUS HACKING HERE
-  \newcommand{\hoggheading}[1]{\addvspace{1ex}\pagebreak[2]%
-    \par\textbf{#1}%
+  \newcommand{\hoggheading}[1]{\addvspace{1ex}\pagebreak[3]%
+    \par\textbf{#1}\nopagebreak%
     \afterpage{\markboth{David W. Hogg, curriculum vitae continued: \textbf{#1}}{}}%
-    \nopagebreak}%
+    \nopagebreak\\*[0.5ex]\nopagebreak}%
 % custom list characteristics
   \newcounter{refpubnum}
   \newcommand{\hogglist}{%
@@ -104,7 +104,7 @@ New York, NY 10003, USA                   & & New York, NY 10011, USA \\
 Max-Planck-Institut f\"ur Astronomie      & & Flatiron Institute \\
 K\"onigstuhl 17                           & & 162 Fifth Ave \\
 69117 Heidelberg, Germany                 & & New York, NY 10010, USA
-\end{tabular}\vspace{2ex}
+\end{tabular}\vspace{4ex} % HACK
 
 \hoggheading{Education}
 \begin{list}{}{\hogglist}
@@ -186,9 +186,7 @@ Deputy Director, New York University Center for Data Science, 2014--2015.
 Director of Undergraduate Studies, Department of Physics, New York University, 2008--2015.
 \end{list}
 
-\hoggheading{Service}
-% reverse chronological by END date.
-\begin{list}{}{\hogglist}
+\hoggheading{Service}\nopagebreak\begin{list}{}{\hogglist}
 \item
 \satellite{Spitzer} Science Center Oversight Committee
 (to advise the \satellite{Spitzer Space Telescope} project),
@@ -391,7 +389,12 @@ Alex~Malz,
 current PhD student, New York University.
 \end{list}
 
-\clearpage
+% begin HACK
+% this next line is a clearpage line with heading hack. Feel free to delete it if pagination is okay.
+%\afterpage{\markboth{David W. Hogg, curriculum vitae continued: \textbf{\ref{rpcount} Refereed publications}}{}}%
+%\clearpage
+% end HACK
+
 \hypersetup{linkcolor=black}%
 \hoggheading{\ref{rpcount} Refereed publications}%% use \etal when there are >9 authors!
 \hypersetup{linkcolor=grey}%
