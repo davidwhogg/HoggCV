@@ -1,4 +1,5 @@
 #!/bin/bash -x
+# copied (with minor modifications) from https://dfm.io/posts/travis-latex/
 
 if git diff --name-only $TRAVIS_COMMIT_RANGE
 then
