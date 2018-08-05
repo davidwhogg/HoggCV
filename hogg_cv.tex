@@ -52,8 +52,8 @@
 % define heading command SERIOUS HACKING HERE
   \newcommand{\hoggheading}[1]{\addvspace{1ex}\pagebreak[2]%
     \par\textbf{#1}%
-    \afterpage{\markboth{David W. Hogg, curriculum vitae continued: \textbf{#1}}{}}
-    \nopagebreak}
+    \afterpage{\markboth{David W. Hogg, curriculum vitae continued: \textbf{#1}}{}}%
+    \nopagebreak}%
 % custom list characteristics
   \newcounter{refpubnum}
   \newcommand{\hogglist}{%
@@ -104,7 +104,7 @@ New York, NY 10003, USA                   & & New York, NY 10011, USA \\
 Max-Planck-Institut f\"ur Astronomie      & & Flatiron Institute \\
 K\"onigstuhl 17                           & & 162 Fifth Ave \\
 69117 Heidelberg, Germany                 & & New York, NY 10010, USA
-\end{tabular}
+\end{tabular}\vspace{2ex}
 
 \hoggheading{Education}
 \begin{list}{}{\hogglist}
