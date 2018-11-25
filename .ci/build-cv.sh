@@ -15,6 +15,13 @@ then
   source activate ./
   conda install -c conda-forge -c pkgw-forge tectonic
 
+  # Making shit up based on https://github.com/rodluger/starry/blob/gradients/.ci/travis.sh
+  mkdir -p $HOME/.config/Tectonic
+  cat > $HOME/.config/Tectonic/config.toml << EOL
+  [[default_bundles]]
+  url = "http://purl.org/net/pkgwpub/tectonic-default"
+  EOL
+
   # Build the document using tectonic
   cd ./
   tectonic hogg_cv.tex --print
