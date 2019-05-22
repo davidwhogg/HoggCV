@@ -1,0 +1,300 @@
+% this is a LaTeX file
+
+\documentclass[12pt,letterpaper]{article}
+\usepackage{color, hyperref}
+\usepackage{ifthen}
+
+% put in the date -- or not
+  \renewcommand{\today}{2019 May 03}
+
+% hypertex insanity
+  \definecolor{linkcolor}{rgb}{0,0,0.33}
+  \definecolor{grey}{rgb}{0.5,0.5,0.5}
+  \hypersetup{
+    colorlinks=true,        % false: boxed links; true: colored links
+    linkcolor=grey,        % color of internal links
+    citecolor=linkcolor,    % color of links to bibliography
+    filecolor=black,        % color of file links
+    urlcolor=linkcolor      % color of external links
+  }
+
+% repeated text formatting
+  \newcommand{\latin}[1]{\textsl{#1}}
+  \newcommand{\etal}{\latin{et~al.}}
+  \newcommand{\satellite}[1]{\textsl{#1}}
+  \newcommand{\project}[1]{\textsl{#1}}
+  \newcommand{\usd}[1]{{#1}\,\textsc{usd}}
+  \newcommand{\eur}[1]{{#1}\,\textsc{eur}}
+  \newcommand{\grantnumber}[2]{{\footnotesize{#1}}; #2,~\textsc{pi}}
+% literature links--use doi if you can
+  \newcommand{\doi}[2]{\href{http://dx.doi.org/#1}{{#2}}}
+  \newcommand{\ads}[2]{\href{http://adsabs.harvard.edu/abs/#1}{{#2}}}
+  \newcommand{\isbn}[1]{{\footnotesize(\textsc{isbn:}{#1})}}
+  \newcommand{\arxiv}[2]{\href{http://arxiv.org/abs/#1}{{#2}\ (\texttt{arXiv:#1})}}
+% define de-emphasize commands
+  \newcommand{\deemph}[1]{\textcolor{grey}{\footnotesize{#1}}}
+  \newcommand{\pubnumber}[1]{\deemph{{#1}.}}
+% custom list characteristics
+  \newcounter{refpubnum}
+  \newcommand{\hogglist}{%
+    \rightmargin=0in
+    \leftmargin=0.18in
+    \topsep=0ex
+    \partopsep=0pt
+    \itemsep=0.2ex
+    \parsep=0pt
+    \itemindent=-1.0\leftmargin
+    \listparindent=0.0\leftmargin
+    \settowidth{\labelsep}{~}
+    \usecounter{refpubnum}
+  }
+  \newcommand{\note}[1]{{\small\par{#1}}}
+% Margins and spaces
+  \raggedright
+  \setlength{\oddsidemargin}{0.00in}
+  \setlength{\topmargin}{0.00in}
+  \setlength{\headsep}{0.00in}
+  \setlength{\headheight}{0.00in}
+  \setlength{\textheight}{9.0in}
+%  \addtolength{\textheight}{-\headsep}
+%  \addtolength{\textheight}{-\headheight}
+  \addtolength{\topmargin}{-\headsep}
+  \addtolength{\topmargin}{-\headheight}
+  \setlength{\textwidth}{6.50in}
+  \setlength{\parindent}{0in}
+  \setlength{\parskip}{1ex}
+% Headings and footing
+  \pagestyle{plain}
+\newcommand{\hoggheading}[1]{\addvspace{1ex}\pagebreak[2]%
+  \par\textbf{#1}}
+
+\begin{document}\thispagestyle{empty}\sloppy\sloppypar\raggedbottom\frenchspacing
+\setlength{\tabcolsep}{0em}
+\begin{tabular}{lll}
+\textbf{\Large David W. Hogg}             & & ~ \\[1ex]
+\texttt{david.hogg@nyu.edu}               & & \url{http://cosmo.nyu.edu/hogg/}\\[1ex]
+Center for Cosmology and Particle Physics & \hspace{6em} & \deemph{also:} \\
+Department of Physics                     & & Center for Data Science \\
+New York University                       & & New York University \\
+726 Broadway, room 1005                   & & 60 Fifth Ave, 7th floor \\
+New York, NY 10003, USA                   & & New York, NY 10011, USA
+(212) 992 8780
+\end{tabular}\vspace{1ex} % HACK
+
+\hoggheading{Current position}
+\begin{list}{}{\hogglist}
+\item
+Professor of Physics and Data Science, New York University, 2014--.
+\end{list}
+
+\hoggheading{Recent professional service work}\nopagebreak\begin{list}{}{\hogglist}
+\item
+\project{Sloan Digital Sky Survey V} Technical Advisory Group,
+2017--present.
+\item
+\satellite{Spitzer} Science Center Oversight Committee
+(to advise the \satellite{Spitzer Space Telescope} project),
+2008--present.
+\item
+Founder and co-organizer of hands-on workshops, including
+\textsl{AAS Hack Together Day} (annually in January, 2013--2019),
+\textsl{AstroHackWeek} (four events, 2014--2017)
+\textsl{Preparing for TESS} (2018 March),
+\textsl{Telluric Line Hack Week} (2019 February),
+and the \textsl{Gaia Sprint} (five week-long events, 2016--2019).
+\item
+Astronomy and Astrophysics Advisory Committee
+(established by the US Congress to advise \textsc{nsf}, \textsc{nasa}, and \textsc{doe} on areas of mutual interest)
+2014--2017.
+\end{list}
+
+\hoggheading{Recent grants}
+%%% reverse order by expiration date
+\begin{list}{}{\hogglist}
+\item
+\textsc{nasa} Astrophysics Data Analysis Grant
+(\grantnumber{80NSSC19K0533}{Bean}),
+\textit{Improving the sensitivity of radial velocity spectrographs with
+data-driven techniques},
+\usd{308,326}, 2019--2021.
+\item
+\textsc{nsf} Cyberinfrastructure for Emerging Science and Engineering Research Grant
+(\grantnumber{OAC-1841594}{Hogg}),
+\textit{Collaborative Research: Community Planning for Scalable Cyberinfrastructure to Support Multi-Messenger Astrophysics},
+\usd{36,469}, 2018--2019.
+\item
+\textsc{nsf} Astronomy and Astrophysics Research Grant
+(\grantnumber{AST-1517237}{Hogg}),
+\textit{New Probabilistic Methods for Observational Cosmology},
+\usd{328,312}, 2015--2019.
+\item
+Moore Foundation and Sloan Foundation Joint Grant
+(LeCun,~\textsc{pi}),
+\textit{The Moore-Sloan Data Science Environment at \textsc{nyu}},
+\usd{12,600,000} (approx), 2013--2018.
+\item
+\textsc{nasa} \satellite{K2} Guest Observer grant
+(\grantnumber{NNX16AC70G}{Hogg}),
+\textit{Ultra-precise photometry in crowded fields: A self-calibration approach},
+\usd{100,000}, 2016--2017.
+\item
+\textsc{nasa} Astrophysics Data Analysis Grant
+(\grantnumber{NNX12AI50G}{Hogg}),
+\textit{The Lives and Deaths of Planets and Stars in the Value-Added UV Photon Catalog},
+\usd{473,705}, 2012--2017.
+\item
+\textsc{nsf} Cyber-Enabled Discovery Type I Grant
+(\grantnumber{IIS-1124794}{Hogg}),
+\textit{A Unified Probabilistic Model of Astronomical Imaging,}
+\usd{675,000}, 2011--2016.
+\end{list}
+
+\hoggheading{Selected publications (last three years)}\nopagebreak\begin{list}{}{\hogglist}
+\item
+Price-Whelan,~A.~M., Johnston,~K.~V., Valluri,~M., Pearson,~S.,
+K\"upper,~A.~H.~W., \& Hogg,~D.~W., 2016,
+\doi{10.1093/mnras/stv2383}{Chaotic dispersal of tidal debris},
+\textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{455} 1079--1098.
+\item
+Lang,~D., Hogg,~D.~W., \& Schlegel,~D.~J., 2016,
+\doi{10.3847/0004-6256/151/2/36}{\project{WISE} photometry for 400 million \project{SDSS} sources},
+\textit{Astron.\,J.}\ \textbf{151} 36.
+\item
+Ness,~M., Hogg,~D.~W., Rix,~H.-W., Martig,~M., Pinsonneault,~M.~H., \& Ho,~A.~Y.~Q., 2016,
+\doi{10.3847/0004-637X/823/2/114}{Spectroscopic determination of masses (and implied ages) for red giants},
+\textit{Astrophys.\,J.}\ \textbf{823} 114.
+\item
+Gordon,~K.~D. \etal, 2016,
+\doi{10.3847/0004-637X/826/2/104}{The Panchromatic \satellite{Hubble} Andromeda Treasury.\ XV.\
+\project{The BEAST:}\ Bayesian Extinction and Stellar Tool},
+\textit{Astrophys.\,J.}\ \textbf{826} 104.
+\item
+Wang,~D., Hogg,~D.~W., Foreman-Mackey,~D., \& Sch\"olkopf,~B., 2016,
+\doi{10.1088/1538-3873/128/967/094503}{A Causal, Data-driven Approach to Modeling the \satellite{Kepler} Data},
+\textit{Pubs.\,Astr.\,Soc.\,Pac.}\ \textbf{128} 094503.
+\item
+Foreman-Mackey,~D., Morton,~T.~D., Hogg,~D.~W., Agol,~E., \& Sch\"olkopf,~B., 2016,
+\doi{10.3847/0004-6256/152/6/206}{The population of long-period transiting exoplanets},
+\textit{Astron.\,J.}\ \textbf{152} 206.
+\item
+Hogg,~D.~W. \etal, 2016,
+\doi{10.3847/1538-4357/833/2/262}{Chemical tagging can work:\ %
+Identification of stellar phase-space structures purely by chemical-abundance similarity},
+\textit{Astrophys.\,J.}\ \textbf{833} 262.
+\item
+Ho,~A.~Y.-Q., Ness,~M.~K., Hogg,~D.~W., Rix,~H.-W., Liu,~C., Yang,~F., Zhang,~Y.,
+Hou,~Y., \& Wang,~Y., 2017,
+\doi{10.3847/1538-4357/836/1/5}{Label Transfer from \project{APOGEE} to \project{LAMOST}: Precise Stellar Parameters for 450,000 \project{LAMOST} Giants},
+\textit{Astrophys.\,J.}\ \textbf{836} 5.
+\item
+Price-Whelan,~A.~M., Hogg,~D.~W., Foreman-Mackey,~D., \& Rix,~H.-W., 2017,
+\doi{10.3847/1538-4357/aa5e50}{\project{The Joker}:\ A Custom Monte Carlo Sampler for Binary-star and Exoplanet Radial Velocity Data},
+\textit{Astrophys.\,J.}\ \textbf{837} 20.
+\item
+Leistedt,~B. \& Hogg,~D.~W., 2017,
+\doi{10.3847/1538-4357/aa6332}{Data-driven, interpretable photometric redshifts trained on heterogeneous and unrepresentative data},
+\textit{Astrophys.\,J.}\ \textbf{838} 5.
+\item
+Huppenkothen,~D., Heil,~L.~M., Hogg,~D.~W., \& Mueller,~A., 2017,
+\doi{10.1093/mnras/stw3190}{Using machine learning to explore the long-term evolution of GRS~1915+105},
+\textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{466} 2364--2377.
+\item
+Casey,~A.~R., Hawkins,~K., Hogg,~D.~W., \etal, 2017,
+\doi{10.3847/1538-4357/aa69c2}{The \project{RAVE-on} Catalog of stellar atmospheric parameters and chemical abundances for chemo-dynamic studies in the \satellite{Gaia} era},
+\textit{Astrophys.\,J.}\ \textbf{840} 59.
+\item
+Ho,~A.~Y.-Q., Rix,~H.-W., Ness,~M.~K., Hogg,~D.~W., Liu,~C., \& Ting,~Y.-S., 2017,
+\doi{10.3847/1538-4357/aa6db3}{Masses and ages for 230,000 \project{LAMOST} giants, via their carbon and nitrogen abundances},
+\textit{Astrophys.\,J.}\ \textbf{841} 40.
+\item
+Oh,~S., Price-Whelan,~A.~M., Hogg,~D.~W., Morton,~T.~D., \& Spergel,~D.~N., 2017,
+\doi{10.3847/1538-3881/aa6ffd}{Comoving stars in \project{Gaia DR1}: An abundance of very wide separation comoving pairs},
+\textit{Astron.\,J.}\ \textbf{153} 257.
+\item
+Ntelis,~P. \etal, 2017,
+\doi{10.1088/1475-7516/2017/06/019}{Exploring cosmic homogeneity with the \project{BOSS DR12} galaxy sample},
+\textit{J.\,Cosm.\,Astropart.\,Phys.}\ \textbf{2017}(06) 019.
+\item
+Blanton,~M.~R. \etal, 2017,
+\doi{10.3847/1538-3881/aa7567}{\project{Sloan Digital Sky Survey IV}:\ Mapping the Milky Way, nearby galaxies, and the distant Universe},
+\textit{Astron.\,J.}\ \textbf{154} 28.
+\item
+Hahn,~C., Vakili,~M., Walsh,~K., Hearin,~A.~P., Hogg,~D.~W., \& Campbell,~D., 2017,
+\doi{10.1093/mnras/stx894}{Approximate Bayesian computation in large-scale structure: constraining the galaxy-halo connection},
+\textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{469} 2791--2805.
+\item
+Hawkins,~K., Leistedt,~B., Bovy,~J., \& Hogg,~D.~W., 2017,
+\doi{10.1093/mnras/stx1655}{Red clump stars and \project{Gaia}:\ Calibration of the standard candle using a hierarchical probabilistic model},
+\textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{471} 722--729.
+\item
+Leistedt,~B. \& Hogg,~D.~W., 2017,
+\doi{10.3847/1538-3881/aa91d5}{Hierarchical probabilistic inference of the color--magnitude diagram and shrinkage of stellar distance uncertainties},
+\textit{Astron.\,J.}\ \textbf{154} 222.
+\item
+Ness,~M., Rix,~H.-W., Hogg,~D.~W., \etal, 2018,
+\doi{10.3847/1538-4357/aa9d8e}{Galactic Doppelg\"anger: The chemical similarity among field stars and among stars with a common birth origin},
+\textit{Astrophys.\,J.}\ \textbf{853} 198.
+\item
+Oh,~S., Price-Whelan,~A.~M., Brewer,~J.~M., Hogg,~D.~W., Spergel,~D.~N., \& Myles,~J., 2018,
+\doi{10.3847/1538-4357/aaab4d}{Kronos and Krios: Evidence for accretion of a massive, rocky planetary system in a comoving pair of Solar-type stars},
+\textit{Astrophys.\,J.}\ \textbf{854} 138.
+\item
+Widmark,~A., Leistedt,~B., \& Hogg,~D.~W., 2018,
+\doi{10.3847/1538-4357/aab7ee}{Inferring binary and trinary stellar populations in photometric and astrometric surveys},
+\textit{Astrophys.\,J.}\ \textbf{857} 114.
+\item
+Hogg,~D.~W. \& Foreman-Mackey,~D., 2018,
+\doi{10.3847/1538-4365/aab76e}{Data analysis recipes: Using Markov Chain Monte Carlo},
+\textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{236} 11.
+\item
+El-Badry,~K., Ting,~Y.-S., Rix,~H.-W., Quataert,~E., Weisz,~D.~R., Cargile,~P., Conroy,~C., Hogg,~D.~W., Bergemann,~M., \& Liu,~C., 2018,
+\doi{10.1093/mnras/sty240}{Discovery and Characterization of 3000+ Main-Sequence Binaries from \project{APOGEE} Spectra},
+\textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{476} 528--553.
+\item
+Price-Whelan,~A.~M., Hogg,~D.~W., \etal, 2018,
+\doi{10.3847/1538-3881/aac387}{Binary companions of evolved stars in \project{APOGEE} DR14: Search method and catalog of $\sim5000$ companions},
+\textit{Astron.\,J.}\ \textbf{156} 18.
+\item
+Huppenkothen,~D.~H., Arendt,~A., Hogg,~D.~W., Ram,~K., VanderPlas,~J.~T. \& Rokem,~A., 2018,
+\doi{10.1073/pnas.1717196115}{Hack weeks as a model for data science education and collaboration},
+\textit{Proc.\,Natl.\,Acad.\,Sci.}\ \textbf{115}(36) 8872--8877.
+\item
+Rezaei~Kh.,~S., Bailer-Jones,~C.~A.~L., Hogg,~D.~W., \& Schultheis,~M., 2018,
+\doi{10.1051/0004-6361/201833284}{Detection of the Milky Way spiral arms in dust from 3D mapping},
+\textit{Astron.\,Astrophys.}\ \textbf{618} A168.
+\item
+Anderson,~L., Hogg~D.~W., Leistedt,~B., Price-Whelan,~A.~M., \& Bovy,~J., 2018,
+\doi{10.3847/1538-3881/aad7bf}{Improving \project{Gaia} parallax precision with a data-driven model of stars},
+\textit{Astron.\,J.}\ \textbf{156} 145.
+\item
+Frankel,~N., Rix,~H.-W., Ting,~Y.-S., Ness,~M., \& Hogg,~D.~W., 2018,
+\doi{10.3847/1538-4357/aadba5}{Measuring radial orbit migration in the Galactic Disk},
+\textit{Astrophys.\,J.}\ \textbf{865} 96.
+\item
+Ness,~M.~K., Silva~Aguirre,~V., Lund,~M.~N., Cantiello,~M., Foreman-Mackey,~D.,
+Hogg,~D.~W., \& Angus,~R., 2018,
+\doi{10.3847/1538-4357/aadb40}{Inference of stellar parameters from brightness variations},
+\textit{Astrophys.\,J.}\ \textbf{866} 15.
+\item
+Bonaca,~A. \& Hogg,~D.~W., 2018,
+\doi{10.3847/1538-4357/aae4da}{The information content in cold stellar streams},
+\textit{Astrophys.\,J.}\ \textbf{867} 101.
+\item
+Fouesneau,~M., Rix,~H.-W., von~Hippel,~T., Hogg,~D.~W., \& Tian,~H., 2019,
+\doi{10.3847/1538-4357/aaee74}{Precise ages of field stars from white dwarf companions},
+\textit{Astrophys.\,J.}\ \textbf{870} 9.
+\item
+Eilers,~A.-C., Hogg,~D.~W., Rix,~H.-W., \& Ness,~M.~K., 2019,
+\doi{10.3847/1538-4357/aaf648}{The circular velocity curve of the Milky Way from 5 to 25 kpc},
+\textit{Astrophys.\,J.}\ \textbf{871} 120.
+\item
+Mohammed,~S., Schiminovich,~D., Hawkins,~K., Johnson,~B., Wang,~D., \& Hogg,~D.~W., 2019,
+\doi{10.3847/1538-4357/aaf236}{An ultraviolet-optical color-metallicity relation for red clump stars using \project{GALEX} and \project{Gaia}},
+\textit{Astrophys.\,J.}\ \textbf{872} 95.
+\item
+Hahn,~C., Beutler,~F., Sinha,~M., Berlind,~A., Ho,~S., \& Hogg,~D.~W., 2019,
+\doi{10.1093/mnras/stz558}{Likelihood non-Gaussianity in large-scale structure analyses},
+\textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{485} 2956--2969.
+\end{list}
+
+\end{document}
