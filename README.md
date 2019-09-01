@@ -7,7 +7,7 @@ Copyright 2018 the author. Why would you want to re-use this? Feel free to use m
 
 ## Acknowledgements
 - **Vicky Steeves** (NYU), who's request got me to put this on *GitHub*.
-- **Dan Foreman-Mackey** (Flatiron), who's blog post at https://dfm.io/posts/travis-latex/ made my continuous integration possible.
+- **Dan Foreman-Mackey** (Flatiron), whose blog post at https://dfm.io/posts/travis-latex/ made my continuous integration possible.
 
 ## Usage
 ```
