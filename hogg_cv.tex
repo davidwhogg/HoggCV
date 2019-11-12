@@ -34,17 +34,17 @@
   }
 
 % repeated text formatting
-  \newcommand{\latin}[1]{\textsl{#1}}
-  \newcommand{\etal}{\latin{et~al.}}
-  \newcommand{\satellite}[1]{\textsl{#1}}
+  \newcommand{\acronym}[1]{\small{#1}}
+  \newcommand{\foreign}[1]{\textsl{#1}}
+  \newcommand{\etal}{\foreign{et~al.}}
   \newcommand{\project}[1]{\textsl{#1}}
-  \newcommand{\usd}[1]{{#1}\,\textsc{usd}}
-  \newcommand{\eur}[1]{{#1}\,\textsc{eur}}
-  \newcommand{\grantnumber}[2]{{\footnotesize{#1}}; #2,~\textsc{pi}}
+  \newcommand{\usd}[1]{{#1}\,\acronym{USD}}
+  \newcommand{\eur}[1]{{#1}\,\acronym{EUR}}
+  \newcommand{\grantnumber}[2]{{\footnotesize{#1}}; #2,~\acronym{PI}}
 % literature links--use doi if you can
   \newcommand{\doi}[2]{\href{http://dx.doi.org/#1}{{#2}}}
   \newcommand{\ads}[2]{\href{http://adsabs.harvard.edu/abs/#1}{{#2}}}
-  \newcommand{\isbn}[1]{{\footnotesize(\textsc{isbn:}{#1})}}
+  \newcommand{\isbn}[1]{{\footnotesize(\acronym{ISBN:}{#1})}}
   \newcommand{\arxiv}[2]{\href{http://arxiv.org/abs/#1}{{#2}\ (\texttt{arXiv:#1})}}
 % define de-emphasize commands
   \newcommand{\deemph}[1]{\textcolor{grey}{\footnotesize{#1}}}
@@ -149,7 +149,7 @@ University, 2008
 \item
 Consultant, Google Inc., 2008.
 \item
-Scholar in Residence, \satellite{Spitzer} Science Center, California
+Scholar in Residence, \project{Spitzer} Science Center, California
 Institute of Technology, 2006
 \item
 Visiting Professor, Department of Physics, Massachusetts Institute of
@@ -179,7 +179,7 @@ Lecturer (part-time), Department of Physics, Princeton University,
 % reverse chronological by END date.
 \begin{list}{}{\hogglist}
 \item
-Executive Director, \project{Moore--Sloan Data Science Environment at \textsc{nyu}}, 2013--2015.
+Executive Director, \project{Moore--Sloan Data Science Environment at \acronym{NYU}}, 2013--2015.
 \item
 Deputy Director, New York University Center for Data Science, 2014--2015.
 \item
@@ -195,28 +195,28 @@ Director of Undergraduate Studies, Department of Physics, New York University, 2
 \project{Sloan Digital Sky Survey IV} Collaboration Council,
 2013--present.
 \item
-\satellite{Spitzer} Science Center Oversight Committee
-(to advise the \satellite{Spitzer Space Telescope} project),
+\project{Spitzer} Science Center Oversight Committee
+(to advise the \project{Spitzer Space Telescope} project),
 2008--present.
 \item
-Founder and co-organizer of hands-on workshops, including
-\textsl{AAS Hack Together Day} (annually in January, 2013--2019),
-\textsl{AstroHackWeek} (four events, 2014--2017)
-\textsl{Preparing for TESS} (2018 March),
-\textsl{Telluric Line Hack Week} (2019 February),
+Founder and co-organizer of hands-on research and education workshops, including
+\textsl{AAS Hack Together Day} (annually in January, 2013--2020),
+\textsl{AstroHackWeek} (five events, 2014--2017, 2020)
+\textsl{Preparing for TESS} (2018),
+\textsl{Telluric Line Hack Week} (2019),
 and the \textsl{Gaia Sprint} (five week-long events, 2016--2019).
 \item
 Astronomy and Astrophysics Advisory Committee
-(established by the US Congress to advise \textsc{nsf}, \textsc{nasa}, and \textsc{doe} on areas of mutual interest)
+(established by the US Congress to advise \acronym{NSF}, \acronym{NASA}, and \acronym{DOE} on areas of mutual interest)
 2014--2017.
 \item
-\project{\textsc{nasa} Extragalactic Database} Users Committee,
+\project{\acronym{NASA} Extragalactic Database} Users Committee,
 2006--2013.
 \item
-\project{Sloan Digital Sky Survey \textsc{iii}} Collaboration Council,
+\project{Sloan Digital Sky Survey \acronym{III}} Collaboration Council,
 2008--2011.
 \item
-Panel Chair, \satellite{Spitzer Space Telescope} Time Allocation Committee,
+Panel Chair, \project{Spitzer Space Telescope} Time Allocation Committee,
 2005.
 \item
 \project{Sloan Digital Sky Survey} Collaboration Council,
@@ -231,7 +231,7 @@ National Optical Astronomy Observatories Time Allocation Committee,
 %%Co-coordinator, Oort Meeting on Galaxy Formation, Leiden Observatory,
 %%2001.
 \item
-\satellite{Hubble Space Telescope} Time Allocation Committee,
+\project{Hubble Space Telescope} Time Allocation Committee,
 1999.
 \end{list}
 
@@ -261,122 +261,122 @@ Award of merit, International Physics Olympiad, Bad Ischl, Austria, 1988.
 %%% reverse order by expiration date
 \begin{list}{}{\hogglist}
 \item
-\textsc{nasa} \project{TESS} Guest Investigator Grant (\grantnumber{TBA}{Angus}),
-\textit{Measuring long rotation periods from \textsc{tess}'s short light curves,},
+\acronym{NASA} \project{\acronym{TESS}} Guest Investigator Grant (\grantnumber{TBA}{Angus}),
+\textit{Measuring long rotation periods from \project{\acronym{TESS}}'s short light curves,},
 \usd{TBD}, 2019--2021.
 \item
-\textsc{nasa} \project{TESS} Guest Investigator Grant (\grantnumber{TBA}{Hogg}),
-\textit{Halo Photometry of Naked-Eye Stars with \textsc{tess}},
+\acronym{NASA} \project{\acronym{TESS}} Guest Investigator Grant (\grantnumber{TBA}{Hogg}),
+\textit{Halo Photometry of Naked-Eye Stars with \project{\acronym{TESS}}},
 \usd{TBD}, 2019--2021.
 \item
-\textsc{nasa} Astrophysics Data Analysis Grant
+\acronym{NASA} Astrophysics Data Analysis Grant
 (\grantnumber{80NSSC19K0533}{Bean}),
 \textit{Improving the sensitivity of radial velocity spectrographs with
 data-driven techniques},
 \usd{308,326}, 2019--2021.
 \item
-\textsc{nsf} Cyberinfrastructure for Emerging Science and Engineering Research Grant
+\acronym{NSF} Cyberinfrastructure for Emerging Science and Engineering Research Grant
 (\grantnumber{OAC-1841594}{Hogg}),
 \textit{Collaborative Research: Community Planning for Scalable Cyberinfrastructure to Support Multi-Messenger Astrophysics},
 \usd{36,469}, 2018--2019.
 \item
-\textsc{nsf} Astronomy and Astrophysics Research Grant
+\acronym{NSF} Astronomy and Astrophysics Research Grant
 (\grantnumber{AST-1517237}{Hogg}),
 \textit{New Probabilistic Methods for Observational Cosmology},
 \usd{328,312}, 2015--2019.
 \item
 Moore Foundation and Sloan Foundation Joint Grant
-(LeCun,~\textsc{pi}),
-\textit{The Moore-Sloan Data Science Environment at \textsc{nyu}},
+(LeCun,~\acronym{PI}),
+\textit{The Moore-Sloan Data Science Environment at \acronym{NYU}},
 \usd{12,600,000} (approx), 2013--2018.
 \item
-\textsc{nasa} \satellite{K2} Guest Observer grant
+\acronym{NASA} \project{\acronym{K2}} Guest Observer grant
 (\grantnumber{NNX16AC70G}{Hogg}),
 \textit{Ultra-precise photometry in crowded fields: A self-calibration approach},
 \usd{100,000}, 2016--2017.
 \item
-\textsc{nasa} Astrophysics Data Analysis Grant
+\acronym{NASA} Astrophysics Data Analysis Grant
 (\grantnumber{NNX12AI50G}{Hogg}),
 \textit{The Lives and Deaths of Planets and Stars in the Value-Added UV Photon Catalog},
 \usd{473,705}, 2012--2017.
 \item
-\textsc{nsf} Cyber-Enabled Discovery Type I Grant
+\acronym{NSF} Cyber-Enabled Discovery Type I Grant
 (\grantnumber{IIS-1124794}{Hogg}),
 \textit{A Unified Probabilistic Model of Astronomical Imaging,}
 \usd{675,000}, 2011--2016.
 \item
-\textsc{nasa} \satellite{Hubble Space Telescope} Archival Resarch grant
+\acronym{NASA} \project{Hubble Space Telescope} Archival Resarch grant
 (\grantnumber{AR-13250}{Hogg}),
-\textit{Probabilistic Self-Calibration of the \textsc{wfc3} IR Channel},
+\textit{Probabilistic Self-Calibration of the \acronym{WFC3} IR Channel},
 \usd{119,988}, 2013--2016.
 \item
-\textsc{nsf} Astronomy and Astrophysics Research Grant
+\acronym{NSF} Astronomy and Astrophysics Research Grant
 (\grantnumber{AST-0908357}{Hogg}),
 \textit{Dynamical models from kinematic data:\ The Milky Way Disk and Halo,}
 \usd{147,000}, 2009--2011.
 \item
 Alexander von Humboldt Foundation Research Fellowship
-(Hogg,~\textsc{pi}),
+(Hogg,~\acronym{PI}),
 \textit{Cosmology with the proper motions of stars,}
 \eur{32,000} (approx), 2008--2011.
 \item
-\textsc{nasa} Astrophysics Data Analysis Grant
+\acronym{NASA} Astrophysics Data Analysis Grant
 (\grantnumber{NNX08AJ48G}{Hogg}),
-\textit{Multi-wavelength astrometric catalog built from \textsc{nasa} data,}
+\textit{Multi-wavelength astrometric catalog built from \acronym{NASA} data,}
 \usd{277,415}, 2008--2011.
 \item
 Amazon Web Services Research Grant
-(Koposov,~\textsc{pi})
+(Koposov,~\acronym{PI})
 \textit{Searching for tidal streams in the Milky Way Halo,}
-40,000~\textsc{cpu}-hours (approx), 2009--2010.
+40,000~\acronym{CPU}-hours (approx), 2009--2010.
 \item
-\textsc{nasa} \satellite{Spitzer Space Telescope} General Observer Grant
-(\satellite{Spitzer} programs {\footnotesize{50568}} and {\footnotesize{50569}}; Schiminovich,~\textsc{pi}),
-\textit{S5:\ Spitzer--\textsc{sdss} Statistical Spectroscopic Survey,}
+\acronym{NASA} \project{Spitzer Space Telescope} General Observer Grant
+(\project{Spitzer} programs {\footnotesize{50568}} and {\footnotesize{50569}}; Schiminovich,~\acronym{PI}),
+\textit{\acronym{S5}:\ \project{Spitzer}--\project{\acronym{SDSS}} Statistical Spectroscopic Survey,}
 \usd{350,000} (approx), 2008--2010.
 \item
 Google Research Grant
-(Blanton,~\textsc{pi}), 
-\textit{Beautiful and correct \textsc{sdss} images for Google Sky,}
+(Blanton,~\acronym{PI}), 
+\textit{Beautiful and correct \project{\acronym{SDSS}} images for \project{Google Sky},}
 \usd{86,000}, 2008--2009.
 \item
-\textsc{nasa} Long-Term Space Astrophysics Grant
+\acronym{NASA} Long-Term Space Astrophysics Grant
 (\grantnumber{NAG5-11669}{Hogg}),
 \textit{Tools for Galaxy Astrophysics in the Era of the
-\satellite{Space Infrared Telescope Facility,}}
+\project{Space Infrared Telescope Facility,}}
 \usd{498,770}, 2002--2007.
 \item
-\textsc{nsf} Information Technology Research Grant
+\acronym{NSF} Information Technology Research Grant
 (\grantnumber{AST-0428465}{Hogg}),
 \textit{Automated Astrometry for Time-Domain and Distributed
 Astrophysics,}
 \usd{504,140}, 2004--2007.
 \item
-\textsc{nasa} \satellite{Spitzer Space Telescope} General Observer Grant
-(\satellite{Spitzer} program {\footnotesize{20120}}; Hogg,~\textsc{pi}),
-\textit{A search for \textsc{pah} emission in extremely low luminosity galaxies,}
+\acronym{NASA} \project{Spitzer Space Telescope} General Observer Grant
+(\project{Spitzer} program {\footnotesize{20120}}; Hogg,~\acronym{PI}),
+\textit{A search for \acronym{PAH} emission in extremely low luminosity galaxies,}
 \usd{59,243}, 2005--2007.
 \item
-\textsc{nasa} \satellite{Galaxy Evolution Explorer} Archival Research Grant
-(Blanton,~\textsc{pi}),
-\textit{K-corrections for \textsc{galex},}
+\acronym{NASA} \project{Galaxy Evolution Explorer} Archival Research Grant
+(Blanton,~\acronym{PI}),
+\textit{K-corrections for \acronym{GALEX},}
 \usd{42,500}, 2004--2005.
 \item
-\textsc{nasa} \satellite{Hubble Space Telescope} Archival Research Grant
-(Blanton,~\textsc{pi}),
+\acronym{NASA} \project{Hubble Space Telescope} Archival Research Grant
+(Blanton,~\acronym{PI}),
 \textit{Comparing the ACS Ultra Deep Field to Low Redshift Galaxy Observations,}
 \usd{70,000}, 2003--2004.
 \item
-\textsc{nsf} Group Grant
+\acronym{NSF} Group Grant
 (\grantnumber{PHY-0101738}{Farrar}),
 \textit{Theoretical Particle Physics, Astrophysics and Cosmology,}
-\usd{686,000} (+\usd{16,000} in \textsc{reu} supplement), 2001--2004.
+\usd{686,000} (+\usd{16,000} in \acronym{REU} supplement), 2001--2004.
 \item
-\textsc{nasa} Hubble Postdoctoral Fellowship, 1997--2000.
+\acronym{NASA} Hubble Postdoctoral Fellowship, 1997--2000.
 % \item
 % Kingsley Foundation Fellowship, Caltech, 1995--1997.
 \item
-\textsc{nsf} Graduate Fellowship, 1992--1995.
+\acronym{NSF} Graduate Fellowship, 1992--1995.
 \end{list}
 
 \hoggheading{PhDs supervised}
@@ -475,7 +475,7 @@ Smail,~I., Hogg,~D.~W., Blandford,~R., Cohen,~J.~G., Edge,~A.~C., \& Djorgovski,
 \textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{277} 1--10.
 \item
 Eisenhardt,~P.~R., Armus,~L., Hogg,~D.~W., Soifer,~B.~T., Neugebauer,~G., \& Werner,~M.~W., 1996,
-\doi{10.1086/177038}{\satellite{Hubble Space Telescope} observations of the luminous IRAS source FSC10214+4724:\ A gravitationally lensed infrared quasar},
+\doi{10.1086/177038}{\project{Hubble Space Telescope} observations of the luminous IRAS source FSC10214+4724:\ A gravitationally lensed infrared quasar},
 \textit{Astrophys.\,J.}\ \textbf{461} 72--83.
 \item
 Cohen,~J.~G., Hogg,~D.~W., Pahre,~M.~A., \& Blandford,~R., 1996,
@@ -550,7 +550,7 @@ Barkana,~R., Blandford,~R., \& Hogg,~D.~W., 1999,
 \textit{Astrophys.\,J.\,Lett.}\ \textbf{513} L91--L94.
 \item
 Fruchter,~A.~S. \etal, 1999,
-\doi{10.1086/312094}{\satellite{Hubble Space Telescope} and Palomar imaging of \textsc{grb}~990123:\ Implications for the nature of gamma-ray bursts and their hosts},
+\doi{10.1086/312094}{\project{Hubble Space Telescope} and Palomar imaging of \acronym{GRB~990123}:\ Implications for the nature of gamma-ray bursts and their hosts},
 \textit{Astrophys.\,J.\,Lett.}\ \textbf{519} L13--L16.
 \item
 Hogg,~D.~W. \& Fruchter,~A.~S., 1999,
@@ -586,11 +586,11 @@ Hogg,~D.~W., 2001,
 \textit{Astron.\,J.}\ \textbf{121} 1207--1213.
 \item
 Blanton,~M.~R. \etal, 2001,
-\doi{10.1086/320405}{The luminosity function of galaxies in \textsc{sdss} commissioning data},
+\doi{10.1086/320405}{The luminosity function of galaxies in \project{\acronym{SDSS}} commissioning data},
 \textit{Astron.\,J.}\ \textbf{121} 2358--2380.
 \item
 Smette,~A. \etal, 2001,
-\doi{10.1086/321585}{\satellite{Hubble Space Telescope/STIS} observations of \textsc{grb}~000301C:\ CCD imaging and NUV MAMA spectroscopy},
+\doi{10.1086/321585}{\project{Hubble Space Telescope/STIS} observations of \acronym{GRB~000301C}:\ \acronym{CCD} imaging and \project{\acronym{NUV MAMA}} spectroscopy},
 \textit{Astrophys.\,J.}\ \textbf{556} 70--76.
 \item
 Yasuda,~N. \etal, 2001,
@@ -618,7 +618,7 @@ Hogg,~D.~W. \etal, 2002,
 \textit{Astron.\,J.}\ \textbf{124} 646--651.
 \item
 Eisenstein,~D.~J., Hogg,~D.~W., \etal, 2003,
-\doi{10.1086/346233}{Average spectra of massive galaxies in the \textsc{sdss}},
+\doi{10.1086/346233}{Average spectra of massive galaxies in the \project{\acronym{SDSS}}},
 \textit{Astrophys.\,J.}\ \textbf{585} 694--713.
 \item
 Hogg,~D.~W. \etal, 2003,
@@ -627,19 +627,19 @@ Hogg,~D.~W. \etal, 2003,
 \textbf{585} L5--L9.
 \item
 Bernardi,~M. \etal, 2003,
-\doi{10.1086/367776}{Early-type galaxies in the \textsc{sdss}.\ I.\ The sample},
+\doi{10.1086/367776}{Early-type galaxies in the \project{\acronym{SDSS}}.\ I.\ The sample},
 \textit{Astron.\,J.}\ \textbf{125} 1817--1848.
 \item
 Bernardi,~M. \etal, 2003,
-\doi{10.1086/374256}{Early-type galaxies in the \textsc{sdss}.\ II.\ Correlations between observables},
+\doi{10.1086/374256}{Early-type galaxies in the \project{\acronym{SDSS}}.\ II.\ Correlations between observables},
 \textit{Astron.\,J.}\ \textbf{125} 1849--1865.
 \item
 Bernardi,~M. \etal, 2003,
-\doi{10.1086/367794}{Early-type galaxies in the \textsc{sdss}.\ III.\ The fundamental plane},
+\doi{10.1086/367794}{Early-type galaxies in the \project{\acronym{SDSS}}.\ III.\ The fundamental plane},
 \textit{Astron.\,J.}\ \textbf{125} 1866--1881.
 \item
 Blanton,~M.~R., Brinkmann,~J., Csabai,~I., Doi,~M., Eisenstein,~D., Fukugita,~M., Gunn,~J.~E., Hogg,~D.~W., \& Schlegel,~D.~J., 2003,
-\doi{10.1086/342935}{Estimating fixed-frame galaxy magnitudes in the \textsc{sdss}},
+\doi{10.1086/342935}{Estimating fixed-frame galaxy magnitudes in the \project{\acronym{SDSS}}},
 \textit{Astron.\,J.}\ \textbf{125} 2348--2360.
 \item
 Blanton,~M.~R. \etal, 2003,
@@ -663,7 +663,7 @@ Quintero,~A.~D., Hogg,~D.~W., \etal, 2004,
 \textit{Astrophys.\,J.}\ \textbf{602} 190--199.
 \item
 Lupton,~R., Blanton,~M.~R., Fekete,~G., Hogg,~D.~W., O'Mullane,~W., Szalay,~A., \& Wherry,~N., 2004,
-\doi{10.1086/382245}{Preparing red-green-blue images from CCD data},
+\doi{10.1086/382245}{Preparing red-green-blue images from \acronym{CCD} data},
 \textit{Pubs.\,Astr.\,Soc.\,Pac.}\ \textbf{116} 133--137.
 \item
 Tegmark,~M. \etal, 2004,
@@ -671,7 +671,7 @@ Tegmark,~M. \etal, 2004,
 \textit{Astrophys.\,J.}\ \textbf{606} 702--740.
 \item
 Tegmark,~M. \etal, 2004,
-\doi{10.1103/PhysRevD.69.103501}{Cosmological parameters from \textsc{sdss} and \textsc{wmap}},
+\doi{10.1103/PhysRevD.69.103501}{Cosmological parameters from \project{\acronym{SDSS}} and \project{\acronym{WMAP}}},
 \textit{Phys.\,Rev.\,D}\ \textbf{69} 103501.
 \item
 Abazajian,~K. \etal, 2004,
@@ -715,7 +715,7 @@ Blanton,~M.~R., Eisenstein,~D.~J., Hogg,~D.~W., Schlegel,~D.~J., \& Brinkmann,~J
 \textit{Astrophys.\,J.}\ \textbf{629} 143--157.
 \item
 Hogg,~D.~W., Blanton,~M.~R., Roweis,~S.~T., \& Johnston,~K.~V., 2005,
-\doi{10.1086/431572}{Modeling complete distributions with incomplete observations:\ The velocity ellipsoid from \satellite{Hipparcos} data},
+\doi{10.1086/431572}{Modeling complete distributions with incomplete observations:\ The velocity ellipsoid from \project{Hipparcos} data},
 \textit{Astrophys.\,J.}\ \textbf{629} 268--275.
 \item
 Berlind,~A.~A., Blanton,~M.~R., Hogg,~D.~W., Weinberg,~D.~H., Dav\'e,~R., Eisenstein,~D.~J., \& Katz,~N., 2005,
@@ -735,7 +735,7 @@ Farrar,~G.~F., Berlind,~A.~A., \& Hogg,~D.~W., 2006,
 \textit{Astrophys.\,J.}\ \textbf{642} L89--L93.
 \item
 Cool,~R.~J., Eisenstein,~D.~J., Hogg,~D.~W., Blanton,~M.~R., Schlegel,~D.~J., Brinkmann,~J., Schneider,~D.~P., \& Vanden~Berk,~D.~E., 2006,
-\doi{10.1086/503334}{\textsc{sdss} pre-burst observations of recent gamma-ray burst fields},
+\doi{10.1086/503334}{\project{\acronym{SDSS}} pre-burst observations of recent gamma-ray burst fields},
 \textit{Pubs.\,Astr.\,Soc.\,Pac.}\ \textbf{118} 733--739.
 \item\label{pub:Masjedi2006}
 Masjedi,~M., Hogg,~D.~W., \etal, 2006,
@@ -756,11 +756,11 @@ Hogg,~D.~W., Masjedi,~M., Berlind,~A.~A., Blanton,~M.~R., Quintero,~A.~D., \& Br
 \textit{Astrophys.\,J.}\ \textbf{650} 763--769.
 \item
 Berlind,~A.~A. \etal, 2006,
-\doi{10.1086/508170}{Percolation galaxy groups and clusters in the \textsc{sdss} Redshift Survey:\ Identification, catalogs, and the multiplicity function},
+\doi{10.1086/508170}{Percolation galaxy groups and clusters in the \project{\acronym{SDSS}} Redshift Survey:\ Identification, catalogs, and the multiplicity function},
 \textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{167} 1--25.
 \item
 Tegmark,~M., \etal, 2006,
-\doi{10.1103/PhysRevD.74.123507}{Cosmological constraints from the \textsc{sdss} Luminous Red Galaxies},
+\doi{10.1103/PhysRevD.74.123507}{Cosmological constraints from the \project{\acronym{SDSS}} Luminous Red Galaxies},
 \textit{Phys.\,Rev.\,D}\ \textbf{74} 123507.
 \item
 Schneider,~D.~P., \etal, 2007,
@@ -776,7 +776,7 @@ Adelman-McCarthy,~J.~K. \etal, 2007,
 \textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{172} 634--644.
 \item
 Barron,~J.~T., Stumm,~C., Hogg,~D.~W., Lang,~D., \& Roweis,~S., 2008,
-\doi{10.1088/0004-6256/135/1/414}{Cleaning the \project{\textsc{usno-b} Catalog} through automatic detection of optical artifacts},
+\doi{10.1088/0004-6256/135/1/414}{Cleaning the \project{\acronym{USNO-B} Catalog} through automatic detection of optical artifacts},
 \textit{Astron.\,J.}\ \textbf{135} 414--422.
 \item
 Padmanabhan,~N., \etal, 2008,
@@ -804,7 +804,7 @@ Bovy,~J., Hogg,~D.~W., \& Moustakas,~J., 2008,
 \textit{Astrophys.\,J.}\ \textbf{688} 198--207.
 \item
 Maller,~A.~H., Berlind,~A.~A., Blanton,~M.~R., \& Hogg,~D.~W., 2009,
-\doi{10.1088/0004-637X/691/1/394}{The intrinsic properties of \textsc{sdss} galaxies},
+\doi{10.1088/0004-637X/691/1/394}{The intrinsic properties of \project{\acronym{SDSS}} galaxies},
 \textit{Astrophys.\,J.}\ \textbf{691} 394--406.
 \item
 Marshall,~P.~J., Hogg,~D.~W., Moustakas,~L.~A., Fassnacht,~C.~D.,
@@ -829,7 +829,7 @@ Bunn,~E.~F. \& Hogg,~D.~W., 2009,
 \textit{Am.\,J.\,Phys.}\ \textbf{77}(8) 688--694.
 \item
 Bovy,~J., Hogg,~D.~W., \& Roweis,~S., 2009,
-\doi{10.1088/0004-637X/700/2/1794}{The velocity distribution of nearby stars from \satellite{Hipparcos} data I.~The significance of the moving groups},
+\doi{10.1088/0004-637X/700/2/1794}{The velocity distribution of nearby stars from \project{Hipparcos} data I.~The significance of the moving groups},
 \textit{Astrophys.\,J.}\ \textbf{700} 1794--1819.
 \item
 Zolotov,~A., Willman,~B., Brooks,~A.~M., Governato,~F., Brook,~C.~B., Hogg,~D.~W., Quinn,~T., \& Stinson,~G., 2009,
@@ -878,7 +878,7 @@ Zolotov,~A., Hogg,~D.~W., \& Willman,~B., 2011,
 \doi{10.1088/2041-8205/732/2/L37}{Associated erratum}:\ \textit{Astrophys.\,J.\,Lett.}\ \textbf{732} L37.
 \item
 Bovy,~J., Hennawi,~J.~F., Hogg,~D.~W., \etal, 2011,
-\doi{10.1088/0004-637X/729/2/141}{Think outside the color-box:\ Probabilistic target selection and the \textsc{sdss-xdqso} quasar targeting catalog},
+\doi{10.1088/0004-637X/729/2/141}{Think outside the color-box:\ Probabilistic target selection and the \acronym{SDSS-XDQSO} quasar targeting catalog},
 \textit{Astrophys.\,J.}\ \textbf{729} 141.
 \item
 Wu,~R., Hogg,~D.~W., \& Moustakas,~J., 2011,
@@ -890,7 +890,7 @@ Yoon,~J.~H., Johnston,~K.~V., \& Hogg,~D.~W., 2011,
 \textit{Astrophys.\,J.}\ \textbf{731} 58.
 \item
 Aihara,~H. \etal, 2011,
-\doi{10.1088/0067-0049/193/2/29}{The Eighth Data Release of the Sloan Digital Sky Survey:\ First data from \textsc{sdss-iii}},
+\doi{10.1088/0067-0049/193/2/29}{The Eighth Data Release of the Sloan Digital Sky Survey:\ First data from \acronym{SDSS-III}},
 \textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{193} 29.
 \doi{10.1088/0067-0049/195/2/26}{Associated erratum}:\ \textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{195} 26.
 \item
@@ -899,7 +899,7 @@ Bovy,~J., Hogg,~D.~W., \& Roweis,~S., 2011,
 \textit{Ann.\,Appl.\,Stat.}\ \textbf{5} 1657--1677.
 \item
 Eisenstein,~D.~J. \etal, 2011,
-\doi{10.1088/0004-6256/142/3/72}{\textsc{sdss-iii}:\ Massive spectroscopic surveys of the distant Universe, the Milky Way, and extra-Solar planetary systems},
+\doi{10.1088/0004-6256/142/3/72}{\acronym{SDSS-III}:\ Massive spectroscopic surveys of the distant Universe, the Milky Way, and extra-Solar planetary systems},
 \textit{Astron.\,J.}\ \textbf{142} 72.
 \item
 Tsalmantza,~P., Decarli,~R., Dotti,~M., \& Hogg,~D.~W., 2011,
@@ -911,7 +911,7 @@ Malyshev,~D. \& Hogg,~D.~W., 2011,
 \textit{Astrophys.\,J.}\ \textbf{738} 181.
 \item
 Coil,~A.~L. \etal, 2011,
-\doi{10.1088/0004-637X/741/1/8}{The \project{Prism MUlti-Object Survey (\textsc{primus})} I:\ Survey overview and characteristics},
+\doi{10.1088/0004-637X/741/1/8}{The \project{Prism MUlti-Object Survey (\acronym{PRIMUS})} I:\ Survey overview and characteristics},
 \textit{Astrophys.\,J.}\ \textbf{741} 8.
 \item
 Schmidt,~K.~B., Rix,~H.-W., Shields,~J.~C., Knecht,~M., Hogg,~D.~W., Maoz,~D., \& Bovy,~J., 2012,
@@ -923,7 +923,7 @@ Hou,~F., Goodman,~J., Hogg,~D.~W., Weare,~J., \& Schwab,~C., 2012,
 \textit{Astrophys.\,J.}\ \textbf{745} 198.
 \item
 Ross,~N.~P. \etal, 2012,
-\doi{10.1088/0067-0049/199/1/3}{The \project{\textsc{sdss-iii} Baryon Oscillation Spectroscopic Survey}:\ Quasar target selection for \project{Data Release Nine}},
+\doi{10.1088/0067-0049/199/1/3}{The \project{\acronym{SDSS-III} Baryon Oscillation Spectroscopic Survey}:\ Quasar target selection for \project{Data Release Nine}},
 \textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{199} 3.
 \item
 Bovy,~J. \etal, 2012,
@@ -980,11 +980,11 @@ Bundy,~K., Hogg,~D.~W., Higgs,~T.~D., Nichol,~R.~C., Yasuda,~N., Masters,~K.~L.,
 \textit{Astron.\,J.}\ \textbf{144} 188.
 \item
 Ahn,~C.~P. \etal, 2012,
-\doi{10.1088/0067-0049/203/2/21}{The Ninth Data Release of the \project{Sloan Digital Sky Survey}:\ First spectroscopic data from the \project{\textsc{sdss-iii} Baryon Oscillation Spectroscopic Survey}},
+\doi{10.1088/0067-0049/203/2/21}{The Ninth Data Release of the \project{Sloan Digital Sky Survey}:\ First spectroscopic data from the \project{\acronym{SDSS-III} Baryon Oscillation Spectroscopic Survey}},
 \textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{203} 21.
 \item
 Dawson,~K.~S. \etal, 2013,
-\doi{10.1088/0004-6256/145/1/10}{The \project{Baryon Oscillation Spectroscopic Survey} of \textsc{sdss-iii}},
+\doi{10.1088/0004-6256/145/1/10}{The \project{Baryon Oscillation Spectroscopic Survey} of \acronym{SDSS-III}},
 \textit{Astron.\,J.}\ \textbf{145} 10.
 \item
 Weisz,~D.~R., Fouesneau,~M., Hogg,~D.~W., \etal, 2013,
@@ -996,7 +996,7 @@ Foreman-Mackey,~D., Hogg,~D.~W., Lang,~D., \& Goodman,~J., 2013,
 \textit{Pubs.\,Astr.\,Soc.\,Pac.}\ \textbf{125} 306--312.
 \item
 Cool,~R.~J. \etal, 2013,
-\doi{10.1088/0004-637X/767/2/118}{The \project{PRIsm MUlti-object Survey (\textsc{primus})}.\ II.\ Data reduction and redshift fitting},
+\doi{10.1088/0004-637X/767/2/118}{The \project{PRIsm MUlti-object Survey (\acronym{PRIMUS})}.\ II.\ Data reduction and redshift fitting},
 \textit{Astrophys.\,J.}\ \textbf{767} 118.
 \item
 Oppenheimer,~B.~R. \etal, 2013,
@@ -1025,7 +1025,7 @@ Lang,~D., Hogg,~D.~W., \& Sch\"olkopf,~B., 2014,
 \textit{JMLR Workshop and Conference Proceedings}, \textbf{33} (AI \& Statistics 2014), 549.
 \item
 Ahn,~C.~P. \etal, 2014,
-\doi{10.1088/0067-0049/211/2/17}{The Tenth Data Release of the \project{Sloan Digital Sky Survey}:\ First spectroscopic data from the \project{\textsc{sdss-iii} Apache Point Observatory Galactic Evolution Experiment}},
+\doi{10.1088/0067-0049/211/2/17}{The Tenth Data Release of the \project{Sloan Digital Sky Survey}:\ First spectroscopic data from the \project{\acronym{SDSS-III} Apache Point Observatory Galactic Evolution Experiment}},
 \textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{211} 17.
 \item
 Goodman,~A. \etal, 2014,
@@ -1054,7 +1054,7 @@ Bonaca,~A., Geha,~M., K\"upper,~A.~H.~W., Diemand,~J., Johnston,~K.~V., \& Hogg,
 \textit{Astrophys.\,J.}\ \textbf{795} 94.
 \item 
 Lee,~K.-G. \etal, 2015,
-\doi{10.1088/0004-637X/799/2/196}{IGM constraints from the \textsc{sdss-iii/boss}
+\doi{10.1088/0004-637X/799/2/196}{IGM constraints from the \acronym{SDSS-III/BOSS}
 DR9 Ly{$\alpha$} forest transmission probability distribution function},
 \textit{Astrophys.\,J.}\ \textbf{799} 196.
 \item
@@ -1070,7 +1070,7 @@ Galactic high-precision scales---The poster child Palomar 5},
 \textit{Astrophys.\,J.}\ \textbf{803} 80.
 \item
 Ambikasaran,~S., Foreman-Mackey,~D., Greengard,~L., Hogg,~D.~W., \& O'Neil,~M., 2015,
-\doi{10.1109/TPAMI.2015.2448083}{Fast direct methods for Gaussian Processes and the analysis of \textsc{nasa} \satellite{Kepler} Mission Data},
+\doi{10.1109/TPAMI.2015.2448083}{Fast direct methods for Gaussian Processes and the analysis of \acronym{NASA} \project{Kepler} Mission Data},
 \textit{IEEE Transactions on Pattern Analysis and Machine Intelligence}\ \textbf{PP} (99) 1,1.
 \item
 Weisz,~D.~R. \etal, 2015,
@@ -1093,7 +1093,7 @@ approach to stellar label determination},
 \textit{Astrophys.\,J.}\ \textbf{808} 16.
 \item
 Alam,~S. \etal, 2015,
-\doi{10.1088/0067-0049/219/1/12}{The Eleventh and Twelfth Data Releases of the \project{Sloan Digital Sky Survey}: Final data from \textsc{sdss-iii}},
+\doi{10.1088/0067-0049/219/1/12}{The Eleventh and Twelfth Data Releases of the \project{Sloan Digital Sky Survey}: Final data from \acronym{SDSS-III}},
 \textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{219} 12.
 \item
 Mandelbaum,~R. \etal, 2015,
@@ -1119,7 +1119,7 @@ Czekala,~I., Andrews,~S.~M., Mandel,~K.~S., Hogg,~D.~W., \& Green,~G.~M., 2015,
 \textit{Astrophys.\,J.}\ \textbf{812} 128.
 \item
 Dalcanton, J.~J., Fouesneau,~M., Hogg,~D.~W., \etal, 2015,
-\doi{10.1088/0004-637X/814/1/3}{The Panchromatic \satellite{Hubble} Andromeda Treasury. VIII.
+\doi{10.1088/0004-637X/814/1/3}{The Panchromatic \project{Hubble} Andromeda Treasury. VIII.
 A wide-area, high-resolution map of dust extinction in M31},
 \textit{Astrophys.\,J.}\ \textbf{814} 3.
 \item
@@ -1159,7 +1159,7 @@ Sch\"olkopf,~B., Hogg,~D.~W., Wang,~D., Foreman-Mackey,~D., Janzing,~D., Simon-G
 \textit{Proc.\,Natl.\,Acad.\,Sci.}\ \textbf{113}(27) 7391--7398.
 \item
 Gordon,~K.~D. \etal, 2016,
-\doi{10.3847/0004-637X/826/2/104}{The Panchromatic \satellite{Hubble} Andromeda Treasury.\ XV.\
+\doi{10.3847/0004-637X/826/2/104}{The Panchromatic \project{Hubble} Andromeda Treasury.\ XV.\
 \project{The BEAST:}\ Bayesian Extinction and Stellar Tool},
 \textit{Astrophys.\,J.}\ \textbf{826} 104.
 \item
@@ -1168,7 +1168,7 @@ Rix,~H.-W., Ting,~Y.-S., Conroy,~C., \& Hogg,~D.~W., 2016,
 \textit{Astrophys.\,J.\,Lett.}\ \textbf{826} L25.
 \item
 Wang,~D., Hogg,~D.~W., Foreman-Mackey,~D., \& Sch\"olkopf,~B., 2016,
-\doi{10.1088/1538-3873/128/967/094503}{A Causal, Data-driven Approach to Modeling the \satellite{Kepler} Data},
+\doi{10.1088/1538-3873/128/967/094503}{A Causal, Data-driven Approach to Modeling the \project{Kepler} Data},
 \textit{Pubs.\,Astr.\,Soc.\,Pac.}\ \textbf{128} 094503.
 \item
 Laurent,~P. \etal, 2016,
@@ -1216,7 +1216,7 @@ Huppenkothen,~D., Heil,~L.~M., Hogg,~D.~W., \& Mueller,~A., 2017,
 \textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{466} 2364--2377.
 \item
 Casey,~A.~R., Hawkins,~K., Hogg,~D.~W., \etal, 2017,
-\doi{10.3847/1538-4357/aa69c2}{The \project{RAVE-on} Catalog of stellar atmospheric parameters and chemical abundances for chemo-dynamic studies in the \satellite{Gaia} era},
+\doi{10.3847/1538-4357/aa69c2}{The \project{RAVE-on} Catalog of stellar atmospheric parameters and chemical abundances for chemo-dynamic studies in the \project{Gaia} era},
 \textit{Astrophys.\,J.}\ \textbf{840} 59.
 \item
 Ho,~A.~Y.-Q., Rix,~H.-W., Ness,~M.~K., Hogg,~D.~W., Liu,~C., \& Ting,~Y.-S., 2017,
@@ -1415,7 +1415,7 @@ Hogg,~D.~W., Cohen,~J.~G., Blandford,~R., Shopbell,~P., Cowie,~L.~L.,
 Hu,~E.~M., \& Songaila,~A., 1997,
 {The redshift distribution in the
 Hubble Deep Field},
-\textit{The \satellite{Hubble Space Telescope} and
+\textit{The \project{Hubble Space Telescope} and
 the High Redshift Universe,} eds.\ Tanvir,~N.~R.,
 Arag\'on-Salamanca,~A., \& Wall,~J.~V., Cambridge University Press,
 Cambridge, 147--148.
@@ -1424,7 +1424,7 @@ Hogg,~D.~W., Blandford,~R., Fassnacht,~C.~D., Kundi\'c,~T.,
 Brainerd,~T.~G., \& Malhotra,~S., 1997,
 {Strong and weak gravitational
 lensing in the Hubble Deep Field},
-\textit{The \satellite{Hubble Space
+\textit{The \project{Hubble Space
 Telescope} and the High Redshift Universe,} eds.\ Tanvir,~N.~R.,
 Arag\'on-Salamanca,~A., \& Wall,~J.~V., Cambridge University Press,
 Cambridge, 267--268.
@@ -1433,8 +1433,8 @@ Arav,~N. \& Hogg,~D.~W., 1997,
 \arxiv{astro-ph/9706068}{What is the redshift of gamma-ray burst 970508?}.
 \item
 Hogg,~D.~W. \& Turner,~E.~L., 1998,
-{\textsc{grb}~971214, association with a Galactic star?},
-\textit{\textsc{grb} Coordinates Network Circular} 150.
+{\acronym{GRB}~971214, association with a Galactic star?},
+\textit{\acronym{GRB} Coordinates Network Circular} 150.
 \item
 Cohen,~J.~G., Hogg,~D.~W., Blandford,~R., Pahre,~M.~A., \& Shopbell,~P.~L., 1998,
 {The extremely red objects found thus far in the Caltech Faint Galaxy Redshift Survey},
@@ -1442,8 +1442,8 @@ Cohen,~J.~G., Hogg,~D.~W., Blandford,~R., Pahre,~M.~A., \& Shopbell,~P.~L., 1998
 ASP Conference Series \textbf{177}, 51--56.
 \item
 Thorsett,~S.~E. \& Hogg,~D.~W., 1999,
-{Possible identification of SN1999E with \textsc{grb}~980910},
-\textit{\textsc{grb} Coordinates Network Circular} 197.
+{Possible identification of SN1999E with \acronym{GRB}~980910},
+\textit{\acronym{GRB} Coordinates Network Circular} 197.
 \item
 Hogg,~D.~W., 1999,
 \arxiv{astro-ph/9905116}{Distance measures in cosmology}.
@@ -1458,8 +1458,8 @@ Hogg,~D.~W.,
 \arxiv{astro-ph/0001419}{Constraints on photometric calibration from observations of high-redshift type Ia supernovae}.
 \item
 Smette,~A. \etal, 2000,
-{Ultraviolet Spectra of \textsc{grb}s:\ Potential with
-\textsc{stis}},
+{Ultraviolet Spectra of \acronym{GRB}s:\ Potential with
+\acronym{STIS}},
 \textit{The Greatest Explosions Since the Big Bang:\ Supernovae
 and Gamma-Ray Bursts,} eds.\ Livio,~M., Panagia,~N., \& Sahu,~K.,
 STScI, Baltimore.
@@ -1482,14 +1482,14 @@ Hogg,~D.~W., Baldry,~I.~K., Blanton,~M.~R., \& Eisenstein,~D.~J., 2002,
 \arxiv{astro-ph/0210394}{The $K$~correction}.
 \item
 Wherry,~N., Blanton,~M.~R., \& Hogg,~D.~W., 2004,
-\arxiv{astro-ph/0406274}{A more informative picture of the \project{\textsc{hst} Ultra Deep Field}}.
+\arxiv{astro-ph/0406274}{A more informative picture of the \project{\acronym{HST} Ultra Deep Field}}.
 \item
 Mahajan,~S. \& Hogg,~D.~W., 2004,
 \arxiv{physics/0412107}{Introductory physics:\ The new scholasticism (book review)}.
 \item
 Eisenstein,~D.~J., Hogg,~D.~W., \& Padmanabhan,~N., 2005,
-{\textsc{grb}~050509b:\ \textsc{sdss} pre-burst observations},
-\textit{\textsc{grb} Coordinates Network Circular} 3418.
+{\acronym{GRB}~050509b:\ \project{\acronym{SDSS}} pre-burst observations},
+\textit{\acronym{GRB} Coordinates Network Circular} 3418.
 \item
 Hogg,~D.~W., 2005,
 {Galaxy evolution with future wide-field space missions},
@@ -1541,10 +1541,10 @@ Hogg,~D.~W., 2012,
 \arxiv{1205.4446}{Data analysis recipes:\ Probability calculus for inference}.
 \item
 Hogg,~D.~W. \etal, 2013,
-\arxiv{1309.0653}{Maximizing \satellite{Kepler} science return per telemetered pixel:\ Detailed models of the focal plane in the two-wheel era}.
+\arxiv{1309.0653}{Maximizing \project{Kepler} science return per telemetered pixel:\ Detailed models of the focal plane in the two-wheel era}.
 \item
 Montet,~B.~T. \etal, 2013,
-\arxiv{1309.0654}{Maximizing \satellite{Kepler} science return per telemetered pixel:\ Searching the habitable zones of the brightest stars}.
+\arxiv{1309.0654}{Maximizing \project{Kepler} science return per telemetered pixel:\ Searching the habitable zones of the brightest stars}.
 \item
 Hou,~F., Goodman~J., \& Hogg,~D.~W., 2014,
 \arxiv{1401.6128}{The probabilities of orbital-companion models for stellar radial velocity data}.
@@ -1620,7 +1620,7 @@ a data-driven model for making precise radial-velocity measurements
 \item \textit{I only began keeping records in 2001}
 \item University of Pennsylvania Astrophysics Colloquium,
           2001~February~26
-\item \textsc{nasa} Goddard Space Flight Center Astrophysics Seminar,
+\item \acronym{NASA} Goddard Space Flight Center Astrophysics Seminar,
           2001~March~22
 \item University of California at Santa Cruz and Lick Observatory,
           Astrophysics Colloquium,
@@ -1691,7 +1691,7 @@ a data-driven model for making precise radial-velocity measurements
 \item University of Chicago Kavli Symposium ``New Views of the Universe'' Chicago IL, 2005~December
 \item Columbia University Institute for Strings, Cosmology, and Astroparticle Physics Seminar, 2006~February~24
 \item Laboratoire de Physique Nucl\'{e}aire et de Hautes Energies de Paris,Cosmology and Astroparticle Colloquium, 2006~March~22
-\item Public Talk for the \textsc{sdss-ii} Collaboration Meeting (invited but declined), Santa Fe NM, 2006~March
+\item Public Talk for the \acronym{SDSS-II} Collaboration Meeting (invited but declined), Santa Fe NM, 2006~March
 \item Instituto Veneto di Scienze, Lettere ed Arti conference, ``Galaxies and structures through cosmic time'' (invited but declined), Venice, Italy, 2006~March
 \item Eastern Illinois University Physics Colloquium, 2006~April~25
 \item Harlow Shapley Lecture at Eastern Illinois University, 2006~April~25
@@ -1704,7 +1704,7 @@ a data-driven model for making precise radial-velocity measurements
 \item UC Davis Cosmology Seminar, 2006~October~19
 \item Rutgers University Astrophysics Seminar, 2006~November~3
 \item UC Santa Cruz Lick Observatory Astrophysics Colloquium, 2007~March~21
-\item \textsc{galex} Science Team Meeting (seminar and discussion) at Johns Hopkins University, 2007~March~27
+\item \project{\acronym{GALEX}} Science Team Meeting (seminar and discussion) at Johns Hopkins University, 2007~March~27
 \item SUNY Stony Brook Astrophysics Colloquium, 2007~March~28
 \item Columbia University Astrophysics Lunch Talk, 2007~April~24
 \item Max-Planck-Institut f\"ur Astronomie ``Galaxy Coffee'' seminar, Heidelberg, Germany, 2007~June~14
@@ -1894,7 +1894,7 @@ a data-driven model for making precise radial-velocity measurements
           Toledo, OH, 2013~April~04
 \item Public Talk, University of Toledo,
           Toledo, OH, 2013~April~04
-\item \textsc{hst} Calibration Workshop, invited but meeting cancelled,
+\item \project{\acronym{HST}} Calibration Workshop, invited but meeting cancelled,
           Baltimore, MD, 2013~April~8--12
 \item What to keep and how to analyze it: Data Curation and Data Analysis with Multiple Phases, invited participant,
           Radcliffe Institute, Cambridge, MA, 2013~May~09--10
