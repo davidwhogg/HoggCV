@@ -14,13 +14,13 @@
 %   - Swap 1/0 flag to include invited talks.
 %----------------------------------------------------------------------
 
-\documentclass[12pt,letterpaper]{article}
+\documentclass[10pt,letterpaper]{article}
 \usepackage{fancyhdr, afterpage}
 \usepackage{color, hyperref}
 \usepackage{ifthen}
 
 % put in the date -- or not
-  \renewcommand{\today}{2019 November 12}
+  \renewcommand{\today}{2019 November 30}
 
 % hypertex insanity
   \definecolor{linkcolor}{rgb}{0,0,0.33}
@@ -34,7 +34,7 @@
   }
 
 % repeated text formatting
-  \newcommand{\acronym}[1]{\small{#1}}
+  \newcommand{\acronym}[1]{{\small{#1}}}
   \newcommand{\foreign}[1]{\textsl{#1}}
   \newcommand{\etal}{\foreign{et~al.}}
   \newcommand{\project}[1]{\textsl{#1}}
@@ -58,7 +58,7 @@
   \newcounter{refpubnum}
   \newcommand{\hogglist}{%
     \rightmargin=0in
-    \leftmargin=0.18in
+    \leftmargin=1.2em
     \topsep=0ex
     \partopsep=0pt
     \itemsep=0.2ex
@@ -71,18 +71,18 @@
   \newcommand{\note}[1]{{\small\par{#1}}}
 % Margins and spaces
   \raggedright
-  \setlength{\oddsidemargin}{0.1in}
-  \setlength{\topmargin}{-0.30in}
-  \setlength{\headsep}{0.15in}
-  \setlength{\headheight}{0.25in}
-  \setlength{\textheight}{9.90in}
-%  \addtolength{\textheight}{-\headsep}
-%  \addtolength{\textheight}{-\headheight}
-  \addtolength{\topmargin}{-\headsep}
-  \addtolength{\topmargin}{-\headheight}
-  \setlength{\textwidth}{6.30in}
+  \setlength{\textheight}{9.0in}
+  \setlength{\topmargin}{-0.5in}
+  \addtolength{\textheight}{-2.0\topmargin}
+  \setlength{\headsep}{0.5\baselineskip}
+  \setlength{\headheight}{1.0\baselineskip}
+  \addtolength{\textheight}{-\headsep}
+  \addtolength{\textheight}{-\headheight}
+  \setlength{\textwidth}{6.5in}
+  \setlength{\oddsidemargin}{0.5in}
+  \addtolength{\textwidth}{-2.0\oddsidemargin}
   \setlength{\parindent}{0in}
-  \setlength{\parskip}{1ex}
+  \setlength{\parskip}{0ex}
 % Headings and footing
   \renewcommand{\headrulewidth}{0pt}
   \pagestyle{fancy}
@@ -92,19 +92,19 @@
 
 \begin{document}\thispagestyle{empty}\sloppy\sloppypar\raggedbottom\frenchspacing
 \setlength{\tabcolsep}{0em}
-\begin{tabular}{lll}
-\textbf{\Large David W. Hogg}             & & \deemph{\today} \\[1ex]
-\texttt{david.hogg@nyu.edu}               & & \url{http://cosmo.nyu.edu/hogg/}\\[1ex]
-Center for Cosmology and Particle Physics & \hspace{6em} & \deemph{also:} \\
-Department of Physics                     & & Center for Data Science \\
-New York University                       & & New York University \\
-726 Broadway, room 1005                   & & 60 Fifth Ave, 7th floor \\
-New York, NY 10003, USA                   & & New York, NY 10011, USA \\[1ex]
-\deemph{also:}                            & & \deemph{also:} \\
-Max-Planck-Institut f\"ur Astronomie      & & Flatiron Institute \\
-K\"onigstuhl 17                           & & 162 Fifth Ave \\
-69117 Heidelberg, Germany                 & & New York, NY 10010, USA
-\end{tabular}\vspace{1ex} % HACK
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} l}
+\textbf{\Large David W. Hogg}             & \deemph{\today} \\[1ex]
+\texttt{david.hogg@nyu.edu}               & \url{http://cosmo.nyu.edu/hogg/}\\[1ex]
+Center for Cosmology and Particle Physics & \deemph{also:} \\
+Department of Physics                     & Center for Data Science \\
+New York University                       & New York University \\
+726 Broadway, room 1005                   & 60 Fifth Ave, 7th floor \\
+New York, NY 10003, USA                   & New York, NY 10011, USA \\[1ex]
+\deemph{also:}                            & \deemph{also:} \\
+Max-Planck-Institut f\"ur Astronomie      & Flatiron Institute \\
+K\"onigstuhl 17                           & 162 Fifth Ave \\
+69117 Heidelberg, Germany                 & New York, NY 10010, USA
+\end{tabular*}\vspace{1ex} % HACK
 
 \hoggheading{Education}
 \begin{list}{}{\hogglist}
@@ -117,7 +117,7 @@ SB 1992 (Physics), Massachusetts Institute of Technology.
 \hoggheading{Positions}
 \begin{list}{}{\hogglist}
 \item
-\deemph{current:} Professor of Physics and Data Science, New York University, 2014--.
+\deemph{current:} Professor of Physics and Data Science, New York University, 2014--present.
 \item
 Associate Professor of Physics with tenure, New York University, 2007--2014.
 \item
@@ -131,10 +131,10 @@ Long-term member, Institute for Advanced Study, 1997--2001.
 \begin{list}{}{\hogglist}
 \item
 \deemph{current:} Group Leader, Astronomical Data Group, Center for Computational Astrophysics,
-Flatiron Institute, New York, 2017--.
+Flatiron Institute, New York, 2017--present.
 \item
 \deemph{current:} Adjunct Senior Staff Scientist, Max-Planck-Institut f\"ur Astronomie,
-Heidelberg, Germany, 2012--.
+Heidelberg, Germany, 2012--present.
 \item
 Consultant, Flatiron Institute, New York, 2016--2017.
 \item
@@ -590,7 +590,7 @@ Blanton,~M.~R. \etal, 2001,
 \textit{Astron.\,J.}\ \textbf{121} 2358--2380.
 \item
 Smette,~A. \etal, 2001,
-\doi{10.1086/321585}{\project{Hubble Space Telescope/STIS} observations of \acronym{GRB~000301C}:\ \acronym{CCD} imaging and \project{\acronym{NUV MAMA}} spectroscopy},
+\doi{10.1086/321585}{\project{Hubble Space Telescope/\acronym{STIS}} observations of \acronym{GRB~000301C}:\ \acronym{CCD} imaging and \project{\acronym{NUV MAMA}} spectroscopy},
 \textit{Astrophys.\,J.}\ \textbf{556} 70--76.
 \item
 Yasuda,~N. \etal, 2001,
@@ -1367,6 +1367,10 @@ Angus,~R. \etal, 2019,
 Pope,~B.~J.~S. \etal, 2019,
 \doi{10.3847/1538-4365/ab3d29}{The \project{\acronym{K2}} Bright Star Survey. \acronym{I}. Methodology and data release},
 \textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{245} 8.
+\item
+Foreman-Mackey,~D. \etal, 2019,
+\doi{10.21105/joss.01864}{\project{emcee v3}:\ A \project{Python} ensemble sampling toolkit for affine-invariant \acronym{MCMC}},
+\textit{J.\,Open\,Source\,Software}\ \textbf{4}(43) 1864.
 \label{rpcount}\end{list}
 
 %% \hoggheading{Publications submitted or in preparation}%
