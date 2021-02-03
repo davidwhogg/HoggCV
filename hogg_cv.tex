@@ -20,7 +20,7 @@
 \usepackage{ifthen}
 
 % put in the date -- or not
-  \renewcommand{\today}{2021 January 29}
+  \renewcommand{\today}{2021 February 3}
 
 % hypertex insanity
   \definecolor{linkcolor}{rgb}{0,0,0.33}
@@ -50,7 +50,7 @@
   \newcommand{\deemph}[1]{\textcolor{grey}{\footnotesize{#1}}}
   \newcommand{\pubnumber}[1]{\deemph{{#1}.}}
 % define heading command SERIOUS HACKING HERE
-  \newcommand{\hoggheading}[1]{\addvspace{1ex}\pagebreak[3]%
+  \newcommand{\hoggheading}[1]{\addvspace{1.5ex}\pagebreak[3]%
     \par\textbf{#1}\nopagebreak%
     \afterpage{\markboth{David W. Hogg, curriculum vitae continued: \textbf{#1}}{}}%
     \nopagebreak\\*[0.5ex]\nopagebreak}%
@@ -198,6 +198,9 @@ Director of Undergraduate Studies, Department of Physics, New York University, 2
 \project{Spitzer} Science Center Oversight Committee
 (to advise the \project{Spitzer Space Telescope} project),
 2008--2019.
+\item
+Panel reviewer for the
+National Science Foundation (2019).
 \item
 Founder and co-organizer of hands-on research and education workshops, including
 \textsl{\acronym{AAS} Hack Together Day} (annually in January, 2013--2020),
@@ -1408,16 +1411,41 @@ Birky,~J., Hogg,~D.~W, Mann,~A.~W., \& Burgasser, A., 2020,
   \textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{497} 818--828.
 \item
   Zhao,~L.~L., Hogg~D.~W., Bedell,~M., \& Fischer,~D.~A., 2021,
-  \doi{10.3847/1538-3881/abd105}{Excalibur: A nonparametric, hierarchical wavelength calibration method for a precision spectrograph},
+  \doi{10.3847/1538-3881/abd105}{\project{Excalibur}: A nonparametric, hierarchical wavelength calibration method for a precision spectrograph},
   \textit{Astron.\,J.}\ \textbf{161} 80.
+\item
+  Samland,~M, Bouwman,~J., Hogg,~D.~W., Brandner,~W., Henning,~T., \& Janson,~M., 2021,
+  \arxiv{2011.12311}{\project{\acronym{TRAP}}: A temporal systematics model for improved direct detection of exoplanets at small angular separations},
+  \textit{Astron.\,Astrophys.}\ in press.
+\item
+  Price-Whelan,~A.~M., Hogg,~D.~W., \etal, 2021,
+  \arxiv{2012.00015}{Orbital Torus Imaging: Using Element Abundances to Map Orbits and Mass in the Milky Way},
+  \textit{Astrophys.\,J.} in press.  
+\item
+  Storey-Fisher,~K \& Hogg,~D.~W., 2021,
+  \arxiv{2011.01836}{Two-point statistics without bins: A continuous-function generalization of the correlation function estimator for large-scale structure},
+  \textit{Astrophys.\,J.} in press.
 \label{rpcount}\end{list}
 
-%% \hoggheading{Publications submitted or in preparation}%
-%% \nopagebreak\begin{list}{}{\hogglist}
-%% \item
-%% Patel,~E., Mykytyn,~D., Hogg,~D.~W., \& Lang,~D.,
-%% {Colors of angularly large galaxies in the \project{Sloan~Digital~Sky~Survey}}.
-%% \end{list}
+\hoggheading{Publications submitted or in preparation}%
+\nopagebreak\begin{list}{}{\hogglist}
+\item
+  Wheeler,~A., Ness,~M., \& Hogg,~D.~W.,
+  \arxiv{2009.03920}{An unsupervised method for identifying X-enriched stars directly from spectra: Li in \project{\acronym{LAMOST}}},
+  \textit{Astrophys.\,J.} submitted.
+\item
+  Huang,~N., Hogg,~D.~W., \& Villar,~S.,
+  \arxiv{2011.11477}{Dimensionality reduction, regularization, and generalization in overparameterized regressions},
+  \textit{\acronym{SIAM}\,J.\,Math\,Data\,Sci.} submitted.
+\item
+  Lang~D. \& Hogg,~D.~W.,
+  \arxiv{2012.15836}{Principled point-source detection in collections of astronomical images},
+  \textit{Astron.\,J.} submitted.
+\item
+  Hogg,~D.~W. \& Villar,~S.,
+  \arxiv{2101.07256}{Fitting very flexible models: Linear regression with large numbers of parameters},
+  \textit{Adv.\,Data\,Anal.\,Class.} submitted.
+\end{list}
 
 \hoggheading{Unrefereed publications}%
 \nopagebreak\begin{list}{}{\hogglist}
@@ -1600,7 +1628,7 @@ Butler-Yeoman,~T., Frean,~M., Hollitt,~C.~P., Hogg,~D.~W., \& Johnston-Hollitt,~
 \arxiv{1601.00266}{Detecting diffuse sources in astronomical imaging},
 \textit{Astronomical Data Analysis Software and Systems XXV,} 
 Lorente,~N.~P.~F. \& Shortridge,~K., eds., 
-ASP Conference Series in press. %% THIS ARTICLE NEEDS A COMPLETE ADASS REFERENCE
+ASP Conference Series. %% THIS ARTICLE NEEDS A COMPLETE ADASS REFERENCE
 \item
 Hogg,~D.~W., 2016,
 \doi{10.1063/PT.3.3200}{Bayesian Methods for the Physical Sciences: Learning from Examples in Astronomy and Physics (book review)},
@@ -1628,9 +1656,6 @@ Hogg,~D.~W. \& Schiminovich,~D., 2019,
 \item
 Hogg,~D.~W., Price-Whelan,~A.~M., \& Leistedt,~B., 2020,
 \arxiv{2005.14199}{Data Analysis Recipes: Products of multivariate Gaussians in Bayesian inferences}.
-\item
-Hogg,~D.~W. \& Villar,~S., 2021,
-\arxiv{2101.07256}{Fitting very flexible models: Linear regression with large numbers of parameters}.
 \end{list}
 
 \hoggheading{Code and other non-standard publications}
