@@ -6,7 +6,7 @@ Get the current version in PDF format <a href="https://github.com/davidwhogg/Hog
 Copyright 2018, 2019 the author. Why would you want to re-use this? Feel free to use my code, macros, and formatting, but if you use anything else *that's weird*.
 
 ## Acknowledgements
-- **Vicky Steeves** (NYU), who's request got me to put this on *GitHub*.
+- **Vicky Steeves** (NYU), whose request got me to put this on *GitHub*.
 - **Dan Foreman-Mackey** (Flatiron), whose blog post at https://dfm.io/posts/travis-latex/ made my continuous integration possible.
 
 ## Usage
