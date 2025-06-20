@@ -1,0 +1,257 @@
+% For the AAS.
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage{fancyhdr, afterpage}
+\usepackage{color, hyperref}
+\usepackage{ifthen}
+
+% put in the date -- or not
+\renewcommand{\today}{2025 June 8}
+
+% hypertex insanity
+  \definecolor{linkcolor}{rgb}{0,0,0.33}
+  \definecolor{grey}{rgb}{0.5,0.5,0.5}
+  \hypersetup{
+    colorlinks=true,        % false: boxed links; true: colored links
+    linkcolor=grey,        % color of internal links
+    citecolor=linkcolor,    % color of links to bibliography
+    filecolor=black,        % color of file links
+    urlcolor=linkcolor      % color of external links
+  }
+
+% repeated text formatting
+  \newcommand{\acronym}[1]{{\small{#1}}}
+  \newcommand{\foreign}[1]{\textsl{#1}}
+  \newcommand{\etal}{\foreign{et~al.}}
+  \newcommand{\project}[1]{\textsl{#1}}
+  \newcommand{\usd}[1]{{#1}\,\acronym{USD}}
+  \newcommand{\eur}[1]{{#1}\,\acronym{EUR}}
+  \newcommand{\grantnumber}[2]{{\footnotesize{#1}}; #2,~\acronym{PI}}
+% literature links--use doi if you can
+  \newcommand{\doi}[2]{\href{http://dx.doi.org/#1}{{#2}}}
+  \newcommand{\ads}[2]{\href{http://adsabs.harvard.edu/abs/#1}{{#2}}}
+  \newcommand{\isbn}[1]{{\footnotesize(\acronym{ISBN:}{#1})}}
+  \newcommand{\arxiv}[2]{\href{http://arxiv.org/abs/#1}{{#2}\ (\texttt{arXiv:#1})}}
+% define de-emphasize commands
+  \newcommand{\deemph}[1]{\textcolor{grey}{\footnotesize{#1}}}
+  \newcommand{\pubnumber}[1]{\deemph{{#1}.}}
+% define heading command SERIOUS HACKING HERE
+  \newcommand{\hoggheading}[1]{\addvspace{1.5ex}\pagebreak[3]%
+    \par\textbf{#1}\nopagebreak%
+    \afterpage{\markboth{David W. Hogg, curriculum vitae continued: \textbf{#1}}{}}%
+    \nopagebreak\\*[0.5ex]\nopagebreak}%
+% custom list characteristics
+  \newcounter{refpubnum}
+  \newcommand{\hogglist}{%
+    \rightmargin=0in
+    \leftmargin=1.2em
+    \topsep=0ex
+    \partopsep=0pt
+    \itemsep=0.2ex
+    \parsep=0pt
+    \itemindent=-1.0\leftmargin
+    \listparindent=0.0\leftmargin
+    \settowidth{\labelsep}{~}
+    \usecounter{refpubnum}
+  }
+  \newcommand{\note}[1]{{\small\par{#1}}}
+% Margins and spaces
+  \raggedright
+  \setlength{\textheight}{9.0in}
+  \setlength{\topmargin}{-0.5in}
+  \addtolength{\textheight}{-2.0\topmargin}
+  \setlength{\headsep}{0.5\baselineskip}
+  \setlength{\headheight}{1.0\baselineskip}
+  \addtolength{\textheight}{-\headsep}
+  \addtolength{\textheight}{-\headheight}
+  \setlength{\textwidth}{6.5in}
+  \setlength{\oddsidemargin}{0.5in}
+  \addtolength{\textwidth}{-2.0\oddsidemargin}
+  \setlength{\parindent}{0in}
+  \setlength{\parskip}{0ex}
+% Headings and footing
+  \renewcommand{\headrulewidth}{0pt}
+  \pagestyle{empty}
+  \lhead{\deemph{\leftmark}}
+  \rhead{\deemph{\thepage}}
+  \cfoot{}
+
+\begin{document}\thispagestyle{empty}\sloppy\sloppypar\raggedbottom\frenchspacing
+
+\hypersetup{linkcolor=black}%
+\hoggheading{A selection of Hogg's education-related publications and products}
+\hypersetup{linkcolor=grey}%
+\begin{list}{}{\hogglist}
+\item
+Danner,~R. \& Hogg,~D.~W., 1996,
+{\textit{The Palomar Observatory},} a
+20-minute video presentation for the Palomar Observatory Visitor
+Center.
+\item
+Hogg,~D.~W., 1997,
+{\textit{Special Relativity},} lecture notes
+employed in Caltech's first-year physics course, 1995--2000,
+{and
+Princeton's}, 1999--2001 and 2003--2004, and others
+(\url{http://cosmo.nyu.edu/hogg/sr/}).
+\item
+Hogg,~D.~W., 1999,
+\arxiv{astro-ph/9905116}{Distance measures in cosmology}.
+\item
+Hogg,~D.~W., 2001,
+\doi{10.1086/318736}{Confusion errors in astrometry and counterpart association},
+\textit{Astron.\,J.}\ \textbf{121} 1207--1213.
+\item
+Hogg,~D.~W., Baldry,~I.~K., Blanton,~M.~R., \& Eisenstein,~D.~J., 2002,
+\arxiv{astro-ph/0210394}{The $K$~correction}.
+\item
+Wherry,~N., Blanton,~M.~R., \& Hogg,~D.~W., 2004,
+\arxiv{astro-ph/0406274}{A more informative picture of the \project{\acronym{HST} Ultra Deep Field}}.
+\item
+Mahajan,~S. \& Hogg,~D.~W., 2004,
+\arxiv{physics/0412107}{Introductory physics:\ The new scholasticism (book review)}.
+\item
+Hogg,~D.~W., 2006,
+\arxiv{physics/0609156}{Air resistance}.
+\item
+Hogg,~D.~W., 2007,
+\arxiv{0709.0107}{Real-world ballistics:\ A dropped bucket}.
+\item
+Hogg,~D.~W., 2008,
+\arxiv{0807.4820}{Data analysis recipes:\ Choosing the binning for a histogram}.
+\item
+Lang,~D., Hogg,~D.~W., Mierle,~K., Blanton,~M., \& Roweis,~S., 2008,
+{\project{Astrometry.net} codebase}, GPLv2 License,
+automated recognition and calibration for astronomical images
+(\url{http://astrometry.net/}).
+\item
+Bovy,~J., Hogg,~D.~W., \& Roweis,~S., 2009,
+{\project{extreme-deconvolution} codebase}, GPLv2 License,
+for modeling distributions in the presence of noise
+(\url{http://code.google.com/p/extreme-deconvolution/}).
+\item
+Weiner,~B.~J. \etal, 2009,
+\arxiv{0903.3971}{Astronomical Software Wants To Be Free:\ A Manifesto}.
+\item
+Hogg,~D.~W., 2009,
+\arxiv{0910.3374}{Is cosmology just a plausibility argument?}.
+\item
+Hogg,~D.~W., Bovy,~J., \& Lang,~D., 2010,
+\arxiv{1008.4686}{Data analysis recipes:\ Fitting a model to data}.
+\item
+Lang,~D., Hogg,~D.~W., Mierle,~K., Blanton,~M., \& Roweis,~S., 2010,
+\doi{10.1088/0004-6256/139/5/1782}{\project{Astrometry.net}:\ Blind astrometric calibration of arbitrary astronomical images},
+\textit{Astron.\,J.}\ \textbf{139} 1782--1800.
+\item
+Hogg,~D.~W., Myers,~A.~D., \& Bovy,~J., 2010,
+\doi{10.1088/0004-637X/725/2/2166}{Inferring the eccentricity distribution},
+\textit{Astrophys.\,J.}\ \textbf{725} 2166--2175.
+\item
+Bovy,~J., Hogg,~D.~W., \& Roweis,~S., 2011,
+\doi{10.1214/10-AOAS439}{Extreme deconvolution:\ Inferring complete distribution functions from noisy, heterogeneous and incomplete observations},
+\textit{Ann.\,Appl.\,Stat.}\ \textbf{5} 1657--1677.
+\item
+Hogg,~D.~W., 2012,
+\arxiv{1205.4446}{Data analysis recipes:\ Probability calculus for inference}.
+\item
+Lang,~D. \& Hogg,~D.~W., 2012,
+\doi{10.1088/0004-6256/144/2/46}{Searching for comets on the World Wide Web:\ The orbit of 17P/Holmes from the behavior of photographers},
+\textit{Astron.\,J.}\ \textbf{144} 46.
+\item
+Holmes,~R., Hogg,~D.~W., \& Rix,~H.-W., 2012,
+\doi{10.1086/668656}{Designing imaging surveys for a retrospective relative photometric calibration},
+\textit{Pubs.\,Astr.\,Soc.\,Pac.}\ \textbf{124} 1219--1231.
+\item
+Foreman-Mackey,~D. \& Hogg,~D.~W., 2012,
+\project{Daft} codebase, \acronym{MIT} license,
+for drawing graphical models
+(\url{http://daft-pgm.org/}).
+\item
+Foreman-Mackey,~D., Hogg,~D.~W., Lang,~D., \& Goodman,~J., 2012,
+{\project{emcee} codebase}, \acronym{MIT} License,
+an adaptive ensemble sampler
+(\url{http://danfm.ca/emcee/}).
+\item
+Foreman-Mackey,~D., Hogg,~D.~W., Lang,~D., \& Goodman,~J., 2013,
+\doi{10.1086/670067}{\project{emcee}:\ The MCMC Hammer},
+\textit{Pubs.\,Astr.\,Soc.\,Pac.}\ \textbf{125} 306--312.
+\item
+Goodman,~A. \etal, 2014,
+\doi{10.1371/journal.pcbi.1003542}{Ten simple rules for the care and feeding of scientific data},
+\textit{PLoS Computational Biology} \textbf{10} e1003542.
+\item
+Sch\"olkopf,~B., Hogg,~D.~W., Wang,~D., Foreman-Mackey,~D., Janzing,~D., Simon-Gabriel,~C.-J., \& Peters,~J., 2016,
+\doi{10.1073/pnas.1511656113}{Modeling confounding by half-sibling regression},
+\textit{Proc.\,Natl.\,Acad.\,Sci.}\ \textbf{113}(27) 7391--7398.
+\item
+Luger,~R., Foreman-Mackey,~D., Hogg,~D.~W., 2017,
+\doi{10.3847/2515-5172/aa96b5}{Linear models for systematics and nuisances}
+\textit{Res.\,Not.\,Amer.\,Astron.\,Soc.} \textbf{1}(1) 7.
+\item
+Price-Whelan,~A., Hogg,~D.~W., \& Foreman-Mackey,~D., 2017,
+\project{The Joker} codebase, \acronym{MIT} License,
+a custom Monte Carlo sampler for the two-body problem
+(\url{http://github.com/adrn/thejoker}).
+\item
+Hogg,~D.~W. \& Foreman-Mackey,~D., 2018,
+\doi{10.3847/1538-4365/aab76e}{Data analysis recipes: Using Markov Chain Monte Carlo},
+\textit{Astrophys.\,J.\,Suppl.\,Ser.}\ \textbf{236} 11.
+\item
+Huppenkothen,~D., Arendt,~A., Hogg,~D.~W., Ram,~K., VanderPlas,~J.~T. \& Rokem,~A., 2018,
+\doi{10.1073/pnas.1717196115}{Hack weeks as a model for data science education and collaboration},
+\textit{Proc.\,Natl.\,Acad.\,Sci.}\ \textbf{115}(36) 8872--8877.
+\item
+Bonaca,~A. \& Hogg,~D.~W., 2018,
+\doi{10.3847/1538-4357/aae4da}{The information content in cold stellar streams},
+\textit{Astrophys.\,J.}\ \textbf{867} 101.
+\item
+Minchev,~I., Matijevic,~G., Hogg,~D.~W., Guiglion,~G., Steinmetz,~M.,
+Anders,~F., Chiappini,~C., Martig,~M., Queiroz,~A., Scannapieco,~C., 2019,
+\doi{10.1093/mnras/stz1239}{Yule-Simpson's paradox in Galactic archaeology},
+\textit{Mon.\,Not.\,R.\,Astr.\,Soc.}\ \textbf{487} 3946--3957.
+\item
+Hogg,~D.~W. \& Schiminovich,~D., 2019,
+\arxiv{1907.04867}{A better consensus: Changes to the Decadal process itself}.
+\item
+Bedell,~M., Hogg,~D.~W., \& Foreman-Mackey,~D., 2019,
+\project{wobble} codebase, \acronym{MIT} license,
+a data-driven model for making precise radial-velocity measurements
+(\url{https://wobble.readthedocs.io/en/latest/}).
+\item
+Hogg,~D.~W., Price-Whelan,~A.~M., \& Leistedt,~B., 2020,
+\arxiv{2005.14199}{Data Analysis Recipes: Products of multivariate Gaussians in Bayesian inferences}.
+\item
+  Storey-Fisher,~K \& Hogg,~D.~W., 2021,
+  \doi{10.3847/1538-4357/abdc21}{Two-point statistics without bins: A continuous-function generalization of the correlation function estimator for large-scale structure},
+  \textit{Astrophys.\,J.} \textbf{909} 220.
+\item
+  Hogg,~D.~W. \& Villar,~S., 2021,
+  \doi{10.1088/1538-3873/ac20ac}{Fitting very flexible models: Linear regression with large numbers of parameters},
+  \textit{Pubs.\,Astr.\,Soc.\,Pac.} \textbf{133} 093001.
+\item
+Hogg,~D.~W., 2022,
+\arxiv{2206.00989}{Magnitudes, distance moduli, bolometric corrections, and so much more}.
+\item
+  Malz,~A.~I. \& Hogg,~D.~W., 2022,
+  \doi{10.3847/1538-4357/ac062f}{How to obtain the redshift distribution from probabilistic redshift estimates},
+  \textit{Astrophys.\,J.} \textbf{928} 127.
+\item
+  Contardo,~G., Hogg,~D.~W., Hunt,~J.~A.~S., Peek,~J.~E.~G., \& Chen,~Y.-C., 2022,
+  \doi{10.3847/1538-3881/ac961e}{The emptiness inside: Finding gaps, valleys, and lacunae with geometric data analysis},
+  \textit{Astron.\,J.} \textbf{164} 226.
+\item
+  Hogg,~D.~W. \& Villar,~S., 2024,
+  \arxiv{2405.18095}{Is machine learning good or bad for the natural sciences?}
+  \textit{Proc.\,41\,Intl.\,Conf.\,Machine\,Learning.}
+\item
+  Lang,~D. \& Hogg,~D.~W., 2025,
+  \arxiv{2012.15836}{Principled point-source detection in collections of astronomical images},
+  \textit{Astron.\,J.} submitted.
+\item
+  Hainje,~C. \& Hogg,~D.~W., 2025,
+  \arxiv{2503.22786}{A formula for the area of a triangle: Useless, but explicitly in Deep Sets form}.
+\item
+  (Plus all 20 \project{Sloan Digital Sky Survey} data-release publications.)
+\end{list}
+
+\end{document}
